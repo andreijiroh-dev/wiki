@@ -1,0 +1,59 @@
+# The Docker image that will be used to build your app
+image:
+  name: quay.io/ajhalili2006/mkdocs-material-build-ci:latest
+
+stages:
+  - test
+  - build
+  - sync-repo
+
+default:
+  tags:
+    - amd64 # currently, we only the image in amd64 right now.
+  # Functions that should be executed before the build script is run
+  before_script:
+    - pip3 install -r --upgrade requirements.txt
+    - npm ci
+    - curl --silent "https://gitlab.com/gitlab-org/incubation-engineering/mobile-devops/download-secure-files/-/raw/main/installer" | bash
+
+# Global builds and stuff
+variables:
+  DEBUG: "1" # MAY HORRIBLY LEAK SECRETS, PROCEED WITH CAUTION
+  FF_ENABLE_COMMIT_DATA: "true"
+  FF_GENERATE_SOCIAL_CARDS: "true"
+  SECURE_FILES_DOWNLOAD_PATH: .secretskit
+  GIT_DEPTH: "0"
+
+pages:
+  stage: build
+  script:
+    - mkdocs build -d public
+  artifacts:
+    paths:
+      # The folder that contains the files to be exposed at the Page URL
+      - public
+  variables:
+    CF_PAGES_PROJECT_NAME: ajhalili2006
+  rules:
+    # This ensures that only pushes to the default branch will trigger
+    # a pages deploy
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+.pages:srht:
+  stage: build
+  needs:
+    - pages
+  script:
+    - doppler run -- ./bin/deploykit-gmi.sh
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+
+# TODO: Automate this over at mirrors/cronjobs soon.
+.sync-branch:
+  stage: sync-repo
+  allow_failure: true
+  script:
+    - |
+      set -x
+      eval $(ssh-agent)
+      ssh-add $PWD/.secretskit/passwordless
+      git push "git@git.sr.ht:~ajhalili2006/garden-monorepo" --mirror || true
