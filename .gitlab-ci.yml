@@ -12,7 +12,7 @@ default:
     - amd64 # currently, we only the image in amd64 right now.
   # Functions that should be executed before the build script is run
   before_script:
-    - pip3 install -r --upgrade requirements.txt
+    - pip3 install -r requirements.txt --upgrade
     - npm ci
     - curl --silent "https://gitlab.com/gitlab-org/incubation-engineering/mobile-devops/download-secure-files/-/raw/main/installer" | bash
 
