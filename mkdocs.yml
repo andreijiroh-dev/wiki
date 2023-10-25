@@ -77,7 +77,8 @@ markdown_extensions:
   - def_list
   - footnotes
   - md_in_html
-  - wikilinks
+  - wikilinks:
+      base_url: /garden/
   - toc:
       permalink: true
   - pymdownx.arithmatex:
@@ -119,6 +120,14 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+
+nav:
+  - Meta:
+    - index.md
+  - Digital Garden:
+    - garden/index.md
+    - Andrei Jiroh in nutshell:
+      - Context behind username: garden/ajhalili2006.md
 
 plugins: 
   - search
