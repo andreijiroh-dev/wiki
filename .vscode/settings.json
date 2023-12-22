@@ -1,0 +1,11 @@
+{
+    "foam.openDailyNote.directory": "./docs/updates",
+    "foam.files.newNotePath": "currentDir",
+    "deno.enable": true,
+    "gitlens.remotes": [
+        {
+            "domain": "mau.dev",
+            "type": "GitLab"
+        }
+    ]
+}
