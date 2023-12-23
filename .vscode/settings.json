@@ -9,6 +9,8 @@
         }
     ],
     "conventionalCommits.scopes": [
-        "api"
+        "api",
+        "global",
+        "mkdocs"
     ]
 }
