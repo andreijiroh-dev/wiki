@@ -12,5 +12,6 @@
         "api",
         "global",
         "mkdocs"
-    ]
+    ],
+    "python.analysis.autoImportCompletions": true
 }

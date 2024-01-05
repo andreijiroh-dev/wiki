@@ -4,7 +4,13 @@
         "garden-api": {
             "path": "api/index.ts",
             "localPort": 3030,
-            "workersDev": true
+            "workersDev": true,
+            "compatibilityDate": "2024-01-05",
+            "bindings": {
+                "golinksDb": {
+                    "kvNamespace": "ce81bb106dc247358c048441bb33feff"
+                }
+            }
         }
     },
     "profiles": {

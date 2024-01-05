@@ -6,6 +6,8 @@ This is the website version of the following repositories from @[[ajhalili2006]]
 * [Digital Garden](https://mau.dev/andreijiroh.dev/digital-garden)
 * [Autistic Life Notebook, Markdownified](https://github.com/ajhalili2006/autistic-life-notebook)
 
-The former two will be merged
+The former two will be merged here and their former homes be archived, alongside
 
 ## The Starter Pack
+
+

@@ -9,6 +9,7 @@ docs_dir: markdown
 
 # Theme settings
 theme:
+  custom_dir: overrides
   name: material
   icon:
     logo: octicons/book-16
@@ -100,8 +101,9 @@ markdown_extensions:
   - pymdownx.magiclink:
       normalize_issue_symbols: true
       repo_url_shorthand: true
-      user: squidfunk
-      repo: mkdocs-material
+      user: andreijiroh-dev
+      repo: webapps/garden-monorepo
+      provider: 'gitlab'
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets:
@@ -125,10 +127,14 @@ markdown_extensions:
 nav:
   - Meta:
     - index.md
+    - Copyright information: copyright.md
   - Digital Garden:
     - garden/index.md
     - Andrei Jiroh in nutshell:
       - Context behind username: garden/ajhalili2006.md
+  - Multiverse:
+    - Hermitcraft:
+      - World Downloads: multiverse/hermitcraft/hermitcraft-world-downloads-mirror.md
 
 plugins: 
   - search
@@ -149,3 +155,6 @@ plugins:
       categories:
         - categories
         - tags
+
+hooks:
+- overrides/hooks/magiclinks_rewriter.py
