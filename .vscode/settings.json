@@ -1,5 +1,5 @@
 {
-    "foam.openDailyNote.directory": "./docs/updates",
+    "foam.openDailyNote.directory": "./src/updates",
     "foam.files.newNotePath": "currentDir",
     "deno.enable": true,
     "gitlens.remotes": [
@@ -14,4 +14,14 @@
         "mkdocs"
     ],
     "python.analysis.autoImportCompletions": true
+    "json.schemaDownload.enable": true,
+    "json.schemas": [
+        {
+            "fileMatch": [
+                ".denoflare*"
+            ],
+            "schema": true,
+            "url": "https://raw.githubusercontent.com/skymethod/denoflare/v0.5.12/common/config.schema.json"
+        }
+    ]
 }

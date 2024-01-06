@@ -4,8 +4,8 @@ site_url: https://garden.andreijiroh.eu.org
 
 repo_name: sources
 repo_url: https://mau.dev/andreijiroh.dev/webapps/garden-monorepo
-edit_uri: edit/main/markdown
-docs_dir: markdown
+edit_uri: edit/main/src
+docs_dir: src
 
 # Theme settings
 theme:
