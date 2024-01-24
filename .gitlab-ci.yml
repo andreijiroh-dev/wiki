@@ -28,7 +28,8 @@ pages:
   stage: build
   script:
     - mkdocs build -d public
-    - doppler run -- yarn wrangler pages deploy --project ajhalili2006-garden public
+    - |
+      doppler run -- yarn wrangler pages deploy --branch "${CI_DEFAULT_BRANCH}" --project-name ajhalili2006-garden public
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
