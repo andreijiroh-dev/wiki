@@ -13,7 +13,7 @@ default:
   # Functions that should be executed before the build script is run
   before_script:
     - pipenv install --ignore-pipfile --deploy
-    #- npm ci
+    - yarn install
     - curl --silent "https://gitlab.com/gitlab-org/incubation-engineering/mobile-devops/download-secure-files/-/raw/main/installer" | bash
 
 # Global builds and stuff
@@ -28,7 +28,7 @@ pages:
   stage: build
   script:
     - mkdocs build -d public
-    - cp markdown/_redirects public/
+    - doppler run -- yarn wrangler pages deploy --project ajhalili2006-garden public
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
