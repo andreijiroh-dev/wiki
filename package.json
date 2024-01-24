@@ -1,0 +1,7 @@
+{
+  "name": "garden-monorepo",
+  "packageManager": "yarn@4.0.2",
+  "devDependencies": {
+    "wrangler": "^3.22.3"
+  }
+}
