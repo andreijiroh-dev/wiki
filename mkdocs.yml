@@ -1,9 +1,9 @@
 site_name: ~ajhalili2006's digital garden
 site_author: "@ajhalili2006@tilde.zone"
-site_url: https://garden.andreijiroh.eu.org
+site_url: https://garden.andreijiroh.xyz
 
 repo_name: sources
-repo_url: https://mau.dev/andreijiroh.dev/webapps/garden-monorepo
+repo_url: https://mau.dev/andreijiroh-dev/webapps/garden-monorepo
 edit_uri: edit/main/src
 docs_dir: src
 
@@ -80,7 +80,7 @@ markdown_extensions:
   - footnotes
   - md_in_html
   - wikilinks:
-      base_url: /garden/
+      base_url: https://go.andreijiroh.xyz/
   - toc:
       permalink: true
   - pymdownx.arithmatex:
@@ -130,6 +130,8 @@ nav:
     - Copyright information: copyright.md
   - Digital Garden:
     - garden/index.md
+    - Daily Log:
+      - index.md
     - Andrei Jiroh in nutshell:
       - Context behind username: garden/ajhalili2006.md
   - Multiverse:
@@ -138,15 +140,36 @@ nav:
 
 plugins: 
   - search
+  # Wiki Changelog feed
   - blog:
       blog_dir: updates
       post_url_format: "{slug}"
-      post_url_max_categories: 2
+      post_url_max_categories: 5
       post_slugify: !!python/object/apply:pymdownx.slugs.slugify
         kwds:
           case: lower
       draft_if_future_date: true
-      authors_file: "{blog}/authors.yml"
+      authors_file: "authors.yml"
+      categories_allowed:
+        - Content Updates Organization
+        - Behind-The-Scenes Updates
+        - Non-Site Updates
+        - Legal
+      post_readtime: false
+  # Daily Notes?
+  - blog:
+      blog_dir: garden/daily-notes
+      post_url_date_format: yyyy-MM-dd
+      post_url_format: "{date}"
+      draft_if_future_date: false
+      authors_file: authors.yml
+      categories_allowed:
+        - Weekly Dump
+        - School
+        - Recap Time Squad + Open-source
+        - Other Side Projects
+        - Actually Autistic Status Update
+      post_readtime: false
   - rss:
       enabled: !ENV [CI, false]
       match_path: updates/posts/.* 
