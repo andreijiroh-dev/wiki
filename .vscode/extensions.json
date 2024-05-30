@@ -1,6 +1,10 @@
 {
     "recommendations": [
         "denoland.vscode-deno",
-        "laurencebahiirwa.deno-std-lib-snippets"
+        "laurencebahiirwa.deno-std-lib-snippets",
+        "redhat.vscode-yaml",
+        "foam.foam-vscode",
+        "vivaxy.vscode-conventional-commits",
+        "eamodio.gitlens"
     ]
 }

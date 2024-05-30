@@ -1,6 +1,6 @@
 FROM gitpod/workspace-python-3.12
 
-ARG SHELLCHECK_VERSION=0.9.0
+ARG SHELLCHECK_VERSION=0.10.0
 ARG HADOLINT_VERSION=2.12.0
 
 RUN curl -sSL https://raw.githubusercontent.com/upciti/wakemeops/main/assets/install_repository | sudo bash \

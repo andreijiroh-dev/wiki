@@ -145,7 +145,7 @@ plugins:
   - search
   # Wiki Changelog feed
   - blog:
-      blog_dir: updates
+      blog_dir: changelog
       post_url_format: "{slug}"
       post_url_max_categories: 5
       post_slugify: !!python/object/apply:pymdownx.slugs.slugify
@@ -178,7 +178,7 @@ plugins:
       post_readtime: true
   - rss:
       enabled: true
-      match_path: (updates|garden/daily-notes)/posts/.* 
+      match_path: (changelog|garden/daily-notes)/posts/.* 
       date_from_meta:
         as_creation: date
       categories:

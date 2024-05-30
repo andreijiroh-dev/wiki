@@ -1,4 +1,5 @@
-# This is a workaround for self-hosted GitLab instance
+# This is a workaround for configuring self-hosted GitLab instance
+# as base URL
 
 import pymdownx.magiclink
 base_url = "https://mau.dev"
