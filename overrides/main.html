@@ -10,24 +10,15 @@
     <!-- meta CSS to import everything -->
     <link rel="stylesheet" href="{{ 'assets/stylesheets/meta.css' | url }}">
 
+    <!-- hypothesis for community annotations -->
     <script src="https://hypothes.is/embed.js" async></script>
     {% endblock %}
-    <!-- Staging build -->
+
+    <!-- announcements -->
     {% block announce %}
-    For updates follow <strong>@ajhalili2006</strong> on
-    <a rel="me" href="https://tilde.zone/@ajhalili2006">
-        <span class="twemoji mastodon">
-            {% include ".icons/fontawesome/brands/mastodon.svg" %}
-        </span>
-    <strong>the tildeverse</strong>
-    </a>
-    and
-    <a href="https://substack.com/@ajhalili2006">
-            <span class="twemoji substack">
-                {% include ".icons/simple/substack.svg" %}
-            </span>
-        <strong>Substack</strong>
-    </a>
+    <img alt="🚧" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f6a7.svg" title=":construction:">
+    <strong>Wiki under consturction</strong> Please accept our apologies for any broken links while migrating content from
+    different repositories. <a href="/migration-progress">Learn more</a>
     {% endblock %}
     {% block container %}
                 <div class="md-content" data-md-component="content">
