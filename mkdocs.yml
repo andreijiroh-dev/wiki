@@ -1,9 +1,10 @@
-site_name: ~ajhalili2006's digital garden
-site_author: "@ajhalili2006@tilde.zone"
-site_url: https://garden.andreijiroh.xyz
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+site_name: ~ajhalili2006's personal wiki + digital garden
+site_author: "Andrei Jiroh Halili"
+site_url: https://wiki.andreijiroh.xyz
 
 repo_name: sources
-repo_url: https://mau.dev/andreijiroh-dev/webapps/garden-monorepo
+repo_url: https://mau.dev/andreijiroh-dev/wiki
 edit_uri: edit/main/src
 docs_dir: src
 
@@ -29,7 +30,7 @@ theme:
       quote: octicons/quote-16
   favicon: assets/branding/default-favicon_512.png
   features:
-    - announce.dismiss
+    #- announce.dismiss
     - content.action.edit
     - content.action.view
     - content.code.annotate
@@ -79,8 +80,9 @@ markdown_extensions:
   - def_list
   - footnotes
   - md_in_html
+  - meta
   - wikilinks:
-      base_url: https://go.andreijiroh.xyz/
+      base_url: https://wiki.andreijiroh.xyz/go/
   - toc:
       permalink: true
   - pymdownx.arithmatex:
@@ -131,7 +133,8 @@ nav:
   - Digital Garden:
     - garden/index.md
     - Daily Log:
-      - index.md
+      - garden/daily-notes/index.md
+      - 'In the Multiverse': garden/daily-note.md
     - Andrei Jiroh in nutshell:
       - Context behind username: garden/ajhalili2006.md
   - Multiverse:
@@ -161,18 +164,21 @@ plugins:
       blog_dir: garden/daily-notes
       post_url_date_format: yyyy-MM-dd
       post_url_format: "{date}"
-      draft_if_future_date: false
+      draft_if_future_date: true
       authors_file: authors.yml
       categories_allowed:
         - Weekly Dump
+        - Monthly Dump
         - School
-        - Recap Time Squad + Open-source
+        - Recap Time Squad
+        - Open-source
+        - Multifandom
         - Other Side Projects
         - Actually Autistic Status Update
-      post_readtime: false
+      post_readtime: true
   - rss:
-      enabled: !ENV [CI, false]
-      match_path: updates/posts/.* 
+      enabled: true
+      match_path: (updates|garden/daily-notes)/posts/.* 
       date_from_meta:
         as_creation: date
       categories:

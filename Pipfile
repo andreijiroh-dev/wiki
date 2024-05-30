@@ -17,3 +17,7 @@ cairosvg = "*"
 
 [requires]
 python_version = "3.12"
+
+[scripts]
+dev = "mkdocs serve --watch overrides --watch-theme --livereload"
+build = "mkdocs build --verbose --use-directory-urls -d ./public --strict"
