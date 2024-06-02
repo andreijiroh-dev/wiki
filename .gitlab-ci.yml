@@ -1,6 +1,6 @@
 # The Docker image that will be used to build your app
 image:
-  name: quay.io/ajhalili2006/mkdocs-material-build-ci:latest
+  name: ghcr.io/ajhalili2006/website/build-ci:latest
 
 stages:
   - test

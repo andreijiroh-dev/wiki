@@ -14,7 +14,11 @@
         "mkdocs",
         "pipenv",
         "stylesheets",
-        "announcement"
+        "announcement",
+        "daily-notes",
+        "changelog",
+        "multiverse",
+        "legal"
     ],
     "conventionalCommits.autoCommit": false,
     "git.alwaysSignOff": true,
