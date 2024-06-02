@@ -133,12 +133,17 @@ nav:
     - "Copyright information": copyright.md
   - Digital Garden:
     - garden/index.md
+    - garden/foam.md
     - Daily Log:
       - garden/daily-notes/index.md
-      - 'In the Multiverse': garden/daily-note.md
+      - "In the Multiverse": garden/daily-note.md
     - Andrei Jiroh in nutshell:
       - Context behind username: garden/ajhalili2006.md
   - Multiverse:
+    - Stellapent Cier / Gildedguy Stories:
+      - multiverse/stellapent-cier/index.md
+      - Episodes:
+        - Story 8: multiverse/stellapent-cier/gildedguy-story-8.md
     - Hermitcraft:
       - World Downloads: multiverse/hermitcraft/hermitcraft-world-downloads-mirror.md
 
@@ -188,6 +193,7 @@ plugins:
         - tags
   - tags:
       tags_file: tags.md
+  #- meta
 
 hooks:
 - overrides/hooks/magiclinks_rewriter.py
