@@ -104,7 +104,7 @@ markdown_extensions:
       normalize_issue_symbols: true
       repo_url_shorthand: true
       user: andreijiroh-dev
-      repo: webapps/garden-monorepo
+      repo: wiki
       provider: 'gitlab'
   - pymdownx.mark
   - pymdownx.smartsymbols
@@ -129,7 +129,8 @@ markdown_extensions:
 nav:
   - Meta:
     - index.md
-    - Copyright information: copyright.md
+    - Tags: tags.md
+    - "Copyright information": copyright.md
   - Digital Garden:
     - garden/index.md
     - Daily Log:
@@ -141,17 +142,17 @@ nav:
     - Hermitcraft:
       - World Downloads: multiverse/hermitcraft/hermitcraft-world-downloads-mirror.md
 
-plugins: 
+plugins:
   - search
   # Wiki Changelog feed
   - blog:
       blog_dir: changelog
-      post_url_format: "{slug}"
+      post_url_format: "{date}/{slug}"
       post_url_max_categories: 5
       post_slugify: !!python/object/apply:pymdownx.slugs.slugify
         kwds:
           case: lower
-      draft_if_future_date: true
+      draft_if_future_date: !ENV [PREVIEW_DRAFTS, false]
       authors_file: "authors.yml"
       categories_allowed:
         - Content Updates Organization
@@ -164,7 +165,7 @@ plugins:
       blog_dir: garden/daily-notes
       post_url_date_format: yyyy-MM-dd
       post_url_format: "{date}"
-      draft_if_future_date: true
+      draft_if_future_date: !ENV [PREVIEW_DRAFTS, false]
       authors_file: authors.yml
       categories_allowed:
         - Weekly Dump
@@ -173,17 +174,20 @@ plugins:
         - Recap Time Squad
         - Open-source
         - Multifandom
+        - Personal Stuff
         - Other Side Projects
         - Actually Autistic Status Update
       post_readtime: true
   - rss:
-      enabled: true
-      match_path: (changelog|garden/daily-notes)/posts/.* 
+      enabled: !ENV [CI, false]
+      match_path: (changelog|garden/daily-notes)/posts/.*
       date_from_meta:
         as_creation: date
       categories:
         - categories
         - tags
+  - tags:
+      tags_file: tags.md
 
 hooks:
 - overrides/hooks/magiclinks_rewriter.py
