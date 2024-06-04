@@ -1,5 +1,5 @@
 {
-    "foam.openDailyNote.directory": "./src/updates",
+    "foam.openDailyNote.directory": "./src/garden/daily-notes/posts",
     "foam.files.newNotePath": "currentDir",
     "deno.enable": true,
     "gitlens.remotes": [
