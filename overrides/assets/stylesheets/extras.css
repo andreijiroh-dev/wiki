@@ -1,0 +1,4 @@
+/* https://github.com/kubernetes/kops/commit/02e273665ee332b8db10b4d5b16032905e9033ae#diff-90722f24642c490256577fd2d4ac2c8aacc389ef0a90e470fb65a2d6665f49d2 */
+.hidden {
+	display: none;
+}
