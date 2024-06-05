@@ -11,14 +11,14 @@ const RAW_RUNTIME_STATE =
   ],\
   "dependencyTreeRoots": [\
     {\
-      "name": "garden-monorepo",\
+      "name": "@ajhalili2006/wiki",\
       "reference": "workspace:."\
     }\
   ],\
   "enableTopLevelFallback": true,\
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
-    ["garden-monorepo", ["workspace:."]]\
+    ["@ajhalili2006/wiki", ["workspace:."]]\
   ],\
   "fallbackPool": [\
   ],\
@@ -27,9 +27,56 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["wrangler", "virtual:252f2cfcbdbc265c72f0f5c2c896d22c085360f342c963193603894b293fe95dadec75892352f8af31df197a6b2f05104ffad522dda5b850a13cb761bbf7f25f#npm:3.58.0"]\
+          ["commitizen", "npm:4.3.0"],\
+          ["cz-conventional-changelog", "npm:3.3.0"],\
+          ["wrangler", "virtual:204731a4a9e3c221236a6771df63f28776d69abc746be7993a7fa7c4a4db8315462d51135672faeb9f91989b955e9cdcc40b0604dfe0e846e7ec08aa0e2af73b#npm:3.58.0"]\
         ],\
         "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["@ajhalili2006/wiki", [\
+      ["workspace:.", {\
+        "packageLocation": "./",\
+        "packageDependencies": [\
+          ["@ajhalili2006/wiki", "workspace:."],\
+          ["commitizen", "npm:4.3.0"],\
+          ["cz-conventional-changelog", "npm:3.3.0"],\
+          ["wrangler", "virtual:204731a4a9e3c221236a6771df63f28776d69abc746be7993a7fa7c4a4db8315462d51135672faeb9f91989b955e9cdcc40b0604dfe0e846e7ec08aa0e2af73b#npm:3.58.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["@babel/code-frame", [\
+      ["npm:7.24.7", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/@babel-code-frame-npm-7.24.7-315a600a58-10c0.zip/node_modules/@babel/code-frame/",\
+        "packageDependencies": [\
+          ["@babel/code-frame", "npm:7.24.7"],\
+          ["@babel/highlight", "npm:7.24.7"],\
+          ["picocolors", "npm:1.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@babel/helper-validator-identifier", [\
+      ["npm:7.24.7", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/@babel-helper-validator-identifier-npm-7.24.7-748889c8d2-10c0.zip/node_modules/@babel/helper-validator-identifier/",\
+        "packageDependencies": [\
+          ["@babel/helper-validator-identifier", "npm:7.24.7"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@babel/highlight", [\
+      ["npm:7.24.7", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/@babel-highlight-npm-7.24.7-d792bd8d9f-10c0.zip/node_modules/@babel/highlight/",\
+        "packageDependencies": [\
+          ["@babel/highlight", "npm:7.24.7"],\
+          ["@babel/helper-validator-identifier", "npm:7.24.7"],\
+          ["chalk", "npm:2.4.2"],\
+          ["js-tokens", "npm:4.0.0"],\
+          ["picocolors", "npm:1.0.1"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["@cloudflare/kv-asset-handler", [\
@@ -87,6 +134,71 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@commitlint/config-validator", [\
+      ["npm:19.0.3", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/@commitlint-config-validator-npm-19.0.3-a29ac807df-10c0.zip/node_modules/@commitlint/config-validator/",\
+        "packageDependencies": [\
+          ["@commitlint/config-validator", "npm:19.0.3"],\
+          ["@commitlint/types", "npm:19.0.3"],\
+          ["ajv", "npm:8.16.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@commitlint/execute-rule", [\
+      ["npm:19.0.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/@commitlint-execute-rule-npm-19.0.0-7474154899-10c0.zip/node_modules/@commitlint/execute-rule/",\
+        "packageDependencies": [\
+          ["@commitlint/execute-rule", "npm:19.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@commitlint/load", [\
+      ["npm:19.2.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/@commitlint-load-npm-19.2.0-4b67509b59-10c0.zip/node_modules/@commitlint/load/",\
+        "packageDependencies": [\
+          ["@commitlint/load", "npm:19.2.0"],\
+          ["@commitlint/config-validator", "npm:19.0.3"],\
+          ["@commitlint/execute-rule", "npm:19.0.0"],\
+          ["@commitlint/resolve-extends", "npm:19.1.0"],\
+          ["@commitlint/types", "npm:19.0.3"],\
+          ["chalk", "npm:5.3.0"],\
+          ["cosmiconfig", "virtual:4b67509b5989e03463b1fd8f45f95e3b0c96fa3a9cee36f6a33149e8e27fbb74ab282562b940c8dd7d286e2c3d83f43031f7aa7631edd43861c26c06a7c05ffd#npm:9.0.0"],\
+          ["cosmiconfig-typescript-loader", "virtual:4b67509b5989e03463b1fd8f45f95e3b0c96fa3a9cee36f6a33149e8e27fbb74ab282562b940c8dd7d286e2c3d83f43031f7aa7631edd43861c26c06a7c05ffd#npm:5.0.0"],\
+          ["lodash.isplainobject", "npm:4.0.6"],\
+          ["lodash.merge", "npm:4.6.2"],\
+          ["lodash.uniq", "npm:4.5.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@commitlint/resolve-extends", [\
+      ["npm:19.1.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/@commitlint-resolve-extends-npm-19.1.0-1bc77d55b3-10c0.zip/node_modules/@commitlint/resolve-extends/",\
+        "packageDependencies": [\
+          ["@commitlint/resolve-extends", "npm:19.1.0"],\
+          ["@commitlint/config-validator", "npm:19.0.3"],\
+          ["@commitlint/types", "npm:19.0.3"],\
+          ["global-directory", "npm:4.0.1"],\
+          ["import-meta-resolve", "npm:4.1.0"],\
+          ["lodash.mergewith", "npm:4.6.2"],\
+          ["resolve-from", "npm:5.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@commitlint/types", [\
+      ["npm:19.0.3", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/@commitlint-types-npm-19.0.3-78a7c5835f-10c0.zip/node_modules/@commitlint/types/",\
+        "packageDependencies": [\
+          ["@commitlint/types", "npm:19.0.3"],\
+          ["@types/conventional-commits-parser", "npm:5.0.0"],\
+          ["chalk", "npm:5.3.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@cspotcode/source-map-support", [\
       ["npm:0.8.1", {\
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/@cspotcode-source-map-support-npm-0.8.1-964f2de99d-10c0.zip/node_modules/@cspotcode/source-map-support/",\
@@ -99,16 +211,16 @@ const RAW_RUNTIME_STATE =
     ]],\
     ["@esbuild-plugins/node-globals-polyfill", [\
       ["npm:0.2.3", {\
-        "packageLocation": "./.yarn/unplugged/@esbuild-plugins-node-globals-polyfill-virtual-583cd0d5ec/node_modules/@esbuild-plugins/node-globals-polyfill/",\
+        "packageLocation": "./.yarn/unplugged/@esbuild-plugins-node-globals-polyfill-virtual-fd879301fa/node_modules/@esbuild-plugins/node-globals-polyfill/",\
         "packageDependencies": [\
           ["@esbuild-plugins/node-globals-polyfill", "npm:0.2.3"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:efb7e05efe5c688d90e8488a5e626c9babc35359bca302374d750445298b8461bca8945e15fc4a860f615bd298f7cc61bbffbf536d56ddf6e8517bdc03718329#npm:0.2.3", {\
-        "packageLocation": "./.yarn/unplugged/@esbuild-plugins-node-globals-polyfill-virtual-583cd0d5ec/node_modules/@esbuild-plugins/node-globals-polyfill/",\
+      ["virtual:a8cb9d331451de9d9cd32e65f75a502fd8011f38cb3b137e7922e6f6561ede7ed5e0441ed0d0ec699f46beba40ecaccddfa8e78b52fe7147a3f6c3988ab50e61#npm:0.2.3", {\
+        "packageLocation": "./.yarn/unplugged/@esbuild-plugins-node-globals-polyfill-virtual-fd879301fa/node_modules/@esbuild-plugins/node-globals-polyfill/",\
         "packageDependencies": [\
-          ["@esbuild-plugins/node-globals-polyfill", "virtual:efb7e05efe5c688d90e8488a5e626c9babc35359bca302374d750445298b8461bca8945e15fc4a860f615bd298f7cc61bbffbf536d56ddf6e8517bdc03718329#npm:0.2.3"],\
+          ["@esbuild-plugins/node-globals-polyfill", "virtual:a8cb9d331451de9d9cd32e65f75a502fd8011f38cb3b137e7922e6f6561ede7ed5e0441ed0d0ec699f46beba40ecaccddfa8e78b52fe7147a3f6c3988ab50e61#npm:0.2.3"],\
           ["@types/esbuild", null],\
           ["esbuild", "npm:0.17.19"]\
         ],\
@@ -127,10 +239,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:efb7e05efe5c688d90e8488a5e626c9babc35359bca302374d750445298b8461bca8945e15fc4a860f615bd298f7cc61bbffbf536d56ddf6e8517bdc03718329#npm:0.2.2", {\
-        "packageLocation": "./.yarn/__virtual__/@esbuild-plugins-node-modules-polyfill-virtual-438c18c066/5/home/gildedguy/.yarn/berry/cache/@esbuild-plugins-node-modules-polyfill-npm-0.2.2-f612681798-10c0.zip/node_modules/@esbuild-plugins/node-modules-polyfill/",\
+      ["virtual:a8cb9d331451de9d9cd32e65f75a502fd8011f38cb3b137e7922e6f6561ede7ed5e0441ed0d0ec699f46beba40ecaccddfa8e78b52fe7147a3f6c3988ab50e61#npm:0.2.2", {\
+        "packageLocation": "./.yarn/__virtual__/@esbuild-plugins-node-modules-polyfill-virtual-232983d374/5/home/gildedguy/.yarn/berry/cache/@esbuild-plugins-node-modules-polyfill-npm-0.2.2-f612681798-10c0.zip/node_modules/@esbuild-plugins/node-modules-polyfill/",\
         "packageDependencies": [\
-          ["@esbuild-plugins/node-modules-polyfill", "virtual:efb7e05efe5c688d90e8488a5e626c9babc35359bca302374d750445298b8461bca8945e15fc4a860f615bd298f7cc61bbffbf536d56ddf6e8517bdc03718329#npm:0.2.2"],\
+          ["@esbuild-plugins/node-modules-polyfill", "virtual:a8cb9d331451de9d9cd32e65f75a502fd8011f38cb3b137e7922e6f6561ede7ed5e0441ed0d0ec699f46beba40ecaccddfa8e78b52fe7147a3f6c3988ab50e61#npm:0.2.2"],\
           ["@types/esbuild", null],\
           ["esbuild", "npm:0.17.19"],\
           ["escape-string-regexp", "npm:4.0.0"],\
@@ -436,6 +548,16 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@types/conventional-commits-parser", [\
+      ["npm:5.0.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/@types-conventional-commits-parser-npm-5.0.0-cc661330d3-10c0.zip/node_modules/@types/conventional-commits-parser/",\
+        "packageDependencies": [\
+          ["@types/conventional-commits-parser", "npm:5.0.0"],\
+          ["@types/node", "npm:20.10.7"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@types/node", [\
       ["npm:20.10.7", {\
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/@types-node-npm-20.10.7-2d1f5de3e9-10c0.zip/node_modules/@types/node/",\
@@ -504,6 +626,29 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["ajv", [\
+      ["npm:8.16.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/ajv-npm-8.16.0-a048a92b27-10c0.zip/node_modules/ajv/",\
+        "packageDependencies": [\
+          ["ajv", "npm:8.16.0"],\
+          ["fast-deep-equal", "npm:3.1.3"],\
+          ["json-schema-traverse", "npm:1.0.0"],\
+          ["require-from-string", "npm:2.0.2"],\
+          ["uri-js", "npm:4.4.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["ansi-escapes", [\
+      ["npm:4.3.2", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/ansi-escapes-npm-4.3.2-3ad173702f-10c0.zip/node_modules/ansi-escapes/",\
+        "packageDependencies": [\
+          ["ansi-escapes", "npm:4.3.2"],\
+          ["type-fest", "npm:0.21.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["ansi-regex", [\
       ["npm:5.0.1", {\
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/ansi-regex-npm-5.0.1-c963a48615-10c0.zip/node_modules/ansi-regex/",\
@@ -521,6 +666,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["ansi-styles", [\
+      ["npm:3.2.1", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/ansi-styles-npm-3.2.1-8cb8107983-10c0.zip/node_modules/ansi-styles/",\
+        "packageDependencies": [\
+          ["ansi-styles", "npm:3.2.1"],\
+          ["color-convert", "npm:1.9.3"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:4.3.0", {\
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/ansi-styles-npm-4.3.0-245c7d42c7-10c0.zip/node_modules/ansi-styles/",\
         "packageDependencies": [\
@@ -548,12 +701,30 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["argparse", [\
+      ["npm:2.0.1", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/argparse-npm-2.0.1-faff7999e6-10c0.zip/node_modules/argparse/",\
+        "packageDependencies": [\
+          ["argparse", "npm:2.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["as-table", [\
       ["npm:1.0.55", {\
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/as-table-npm-1.0.55-d648539c6d-10c0.zip/node_modules/as-table/",\
         "packageDependencies": [\
           ["as-table", "npm:1.0.55"],\
           ["printable-characters", "npm:1.0.42"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["at-least-node", [\
+      ["npm:1.0.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/at-least-node-npm-1.0.0-2b36e661fa-10c0.zip/node_modules/at-least-node/",\
+        "packageDependencies": [\
+          ["at-least-node", "npm:1.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -567,11 +738,32 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["base64-js", [\
+      ["npm:1.5.1", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/base64-js-npm-1.5.1-b2f7275641-10c0.zip/node_modules/base64-js/",\
+        "packageDependencies": [\
+          ["base64-js", "npm:1.5.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["binary-extensions", [\
       ["npm:2.2.0", {\
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/binary-extensions-npm-2.2.0-180c33fec7-10c0.zip/node_modules/binary-extensions/",\
         "packageDependencies": [\
           ["binary-extensions", "npm:2.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["bl", [\
+      ["npm:4.1.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/bl-npm-4.1.0-7f94cdcf3f-10c0.zip/node_modules/bl/",\
+        "packageDependencies": [\
+          ["bl", "npm:4.1.0"],\
+          ["buffer", "npm:5.7.1"],\
+          ["inherits", "npm:2.0.4"],\
+          ["readable-stream", "npm:3.6.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -586,6 +778,15 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["brace-expansion", [\
+      ["npm:1.1.11", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/brace-expansion-npm-1.1.11-fb95eb05ad-10c0.zip/node_modules/brace-expansion/",\
+        "packageDependencies": [\
+          ["brace-expansion", "npm:1.1.11"],\
+          ["balanced-match", "npm:1.0.2"],\
+          ["concat-map", "npm:0.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:2.0.1", {\
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/brace-expansion-npm-2.0.1-17aa2616f9-10c0.zip/node_modules/brace-expansion/",\
         "packageDependencies": [\
@@ -601,6 +802,25 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["braces", "npm:3.0.2"],\
           ["fill-range", "npm:7.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:3.0.3", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/braces-npm-3.0.3-582c14023c-10c0.zip/node_modules/braces/",\
+        "packageDependencies": [\
+          ["braces", "npm:3.0.3"],\
+          ["fill-range", "npm:7.1.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["buffer", [\
+      ["npm:5.7.1", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/buffer-npm-5.7.1-513ef8259e-10c0.zip/node_modules/buffer/",\
+        "packageDependencies": [\
+          ["buffer", "npm:5.7.1"],\
+          ["base64-js", "npm:1.5.1"],\
+          ["ieee754", "npm:1.2.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -626,6 +846,24 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["cachedir", [\
+      ["npm:2.3.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/cachedir-npm-2.3.0-640dc16bbb-10c0.zip/node_modules/cachedir/",\
+        "packageDependencies": [\
+          ["cachedir", "npm:2.3.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["callsites", [\
+      ["npm:3.1.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/callsites-npm-3.1.0-268f989910-10c0.zip/node_modules/callsites/",\
+        "packageDependencies": [\
+          ["callsites", "npm:3.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["capnp-ts", [\
       ["npm:0.7.0", {\
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/capnp-ts-npm-0.7.0-300a60f261-10c0.zip/node_modules/capnp-ts/",\
@@ -633,6 +871,43 @@ const RAW_RUNTIME_STATE =
           ["capnp-ts", "npm:0.7.0"],\
           ["debug", "virtual:4b12ba5111caf7e8338099bdbc7cb046a9f8e079a44e74d0c03dca469876e3071ebbe671c5e90ae6b78ae33e22c205fa5ed32169a4aabd1404b13c56d09986e1#npm:4.3.4"],\
           ["tslib", "npm:2.6.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["chalk", [\
+      ["npm:2.4.2", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/chalk-npm-2.4.2-3ea16dd91e-10c0.zip/node_modules/chalk/",\
+        "packageDependencies": [\
+          ["chalk", "npm:2.4.2"],\
+          ["ansi-styles", "npm:3.2.1"],\
+          ["escape-string-regexp", "npm:1.0.5"],\
+          ["supports-color", "npm:5.5.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:4.1.2", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/chalk-npm-4.1.2-ba8b67ab80-10c0.zip/node_modules/chalk/",\
+        "packageDependencies": [\
+          ["chalk", "npm:4.1.2"],\
+          ["ansi-styles", "npm:4.3.0"],\
+          ["supports-color", "npm:7.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:5.3.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/chalk-npm-5.3.0-d181999efb-10c0.zip/node_modules/chalk/",\
+        "packageDependencies": [\
+          ["chalk", "npm:5.3.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["chardet", [\
+      ["npm:0.7.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/chardet-npm-0.7.0-27933dd6c7-10c0.zip/node_modules/chardet/",\
+        "packageDependencies": [\
+          ["chardet", "npm:0.7.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -672,7 +947,52 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["cli-cursor", [\
+      ["npm:3.1.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/cli-cursor-npm-3.1.0-fee1e46b5e-10c0.zip/node_modules/cli-cursor/",\
+        "packageDependencies": [\
+          ["cli-cursor", "npm:3.1.0"],\
+          ["restore-cursor", "npm:3.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["cli-spinners", [\
+      ["npm:2.9.2", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/cli-spinners-npm-2.9.2-be9c08efee-10c0.zip/node_modules/cli-spinners/",\
+        "packageDependencies": [\
+          ["cli-spinners", "npm:2.9.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["cli-width", [\
+      ["npm:3.0.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/cli-width-npm-3.0.0-387b3f68f9-10c0.zip/node_modules/cli-width/",\
+        "packageDependencies": [\
+          ["cli-width", "npm:3.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["clone", [\
+      ["npm:1.0.4", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/clone-npm-1.0.4-a610fcbcf9-10c0.zip/node_modules/clone/",\
+        "packageDependencies": [\
+          ["clone", "npm:1.0.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["color-convert", [\
+      ["npm:1.9.3", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/color-convert-npm-1.9.3-1fe690075e-10c0.zip/node_modules/color-convert/",\
+        "packageDependencies": [\
+          ["color-convert", "npm:1.9.3"],\
+          ["color-name", "npm:1.1.3"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:2.0.1", {\
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/color-convert-npm-2.0.1-79730e935b-10c0.zip/node_modules/color-convert/",\
         "packageDependencies": [\
@@ -683,10 +1003,58 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["color-name", [\
+      ["npm:1.1.3", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/color-name-npm-1.1.3-728b7b5d39-10c0.zip/node_modules/color-name/",\
+        "packageDependencies": [\
+          ["color-name", "npm:1.1.3"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:1.1.4", {\
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/color-name-npm-1.1.4-025792b0ea-10c0.zip/node_modules/color-name/",\
         "packageDependencies": [\
           ["color-name", "npm:1.1.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["commitizen", [\
+      ["npm:4.3.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/commitizen-npm-4.3.0-3695cdaf66-10c0.zip/node_modules/commitizen/",\
+        "packageDependencies": [\
+          ["commitizen", "npm:4.3.0"],\
+          ["cachedir", "npm:2.3.0"],\
+          ["cz-conventional-changelog", "npm:3.3.0"],\
+          ["dedent", "npm:0.7.0"],\
+          ["detect-indent", "npm:6.1.0"],\
+          ["find-node-modules", "npm:2.1.3"],\
+          ["find-root", "npm:1.1.0"],\
+          ["fs-extra", "npm:9.1.0"],\
+          ["glob", "npm:7.2.3"],\
+          ["inquirer", "npm:8.2.5"],\
+          ["is-utf8", "npm:0.2.1"],\
+          ["lodash", "npm:4.17.21"],\
+          ["minimist", "npm:1.2.7"],\
+          ["strip-bom", "npm:4.0.0"],\
+          ["strip-json-comments", "npm:3.1.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["concat-map", [\
+      ["npm:0.0.1", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/concat-map-npm-0.0.1-85a921b7ee-10c0.zip/node_modules/concat-map/",\
+        "packageDependencies": [\
+          ["concat-map", "npm:0.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["conventional-commit-types", [\
+      ["npm:3.0.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/conventional-commit-types-npm-3.0.0-e12e37c124-10c0.zip/node_modules/conventional-commit-types/",\
+        "packageDependencies": [\
+          ["conventional-commit-types", "npm:3.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -700,6 +1068,61 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["cosmiconfig", [\
+      ["npm:9.0.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/cosmiconfig-npm-9.0.0-47d78cf275-10c0.zip/node_modules/cosmiconfig/",\
+        "packageDependencies": [\
+          ["cosmiconfig", "npm:9.0.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:4b67509b5989e03463b1fd8f45f95e3b0c96fa3a9cee36f6a33149e8e27fbb74ab282562b940c8dd7d286e2c3d83f43031f7aa7631edd43861c26c06a7c05ffd#npm:9.0.0", {\
+        "packageLocation": "./.yarn/__virtual__/cosmiconfig-virtual-adf96ed03c/5/home/gildedguy/.yarn/berry/cache/cosmiconfig-npm-9.0.0-47d78cf275-10c0.zip/node_modules/cosmiconfig/",\
+        "packageDependencies": [\
+          ["cosmiconfig", "virtual:4b67509b5989e03463b1fd8f45f95e3b0c96fa3a9cee36f6a33149e8e27fbb74ab282562b940c8dd7d286e2c3d83f43031f7aa7631edd43861c26c06a7c05ffd#npm:9.0.0"],\
+          ["@types/typescript", null],\
+          ["env-paths", "npm:2.2.1"],\
+          ["import-fresh", "npm:3.3.0"],\
+          ["js-yaml", "npm:4.1.0"],\
+          ["parse-json", "npm:5.2.0"],\
+          ["typescript", null]\
+        ],\
+        "packagePeers": [\
+          "@types/typescript",\
+          "typescript"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["cosmiconfig-typescript-loader", [\
+      ["npm:5.0.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/cosmiconfig-typescript-loader-npm-5.0.0-6462903b70-10c0.zip/node_modules/cosmiconfig-typescript-loader/",\
+        "packageDependencies": [\
+          ["cosmiconfig-typescript-loader", "npm:5.0.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:4b67509b5989e03463b1fd8f45f95e3b0c96fa3a9cee36f6a33149e8e27fbb74ab282562b940c8dd7d286e2c3d83f43031f7aa7631edd43861c26c06a7c05ffd#npm:5.0.0", {\
+        "packageLocation": "./.yarn/__virtual__/cosmiconfig-typescript-loader-virtual-55a335da9f/5/home/gildedguy/.yarn/berry/cache/cosmiconfig-typescript-loader-npm-5.0.0-6462903b70-10c0.zip/node_modules/cosmiconfig-typescript-loader/",\
+        "packageDependencies": [\
+          ["cosmiconfig-typescript-loader", "virtual:4b67509b5989e03463b1fd8f45f95e3b0c96fa3a9cee36f6a33149e8e27fbb74ab282562b940c8dd7d286e2c3d83f43031f7aa7631edd43861c26c06a7c05ffd#npm:5.0.0"],\
+          ["@types/cosmiconfig", null],\
+          ["@types/node", null],\
+          ["@types/typescript", null],\
+          ["cosmiconfig", "virtual:4b67509b5989e03463b1fd8f45f95e3b0c96fa3a9cee36f6a33149e8e27fbb74ab282562b940c8dd7d286e2c3d83f43031f7aa7631edd43861c26c06a7c05ffd#npm:9.0.0"],\
+          ["jiti", "npm:1.21.3"],\
+          ["typescript", null]\
+        ],\
+        "packagePeers": [\
+          "@types/cosmiconfig",\
+          "@types/node",\
+          "@types/typescript",\
+          "cosmiconfig",\
+          "typescript"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["cross-spawn", [\
       ["npm:7.0.3", {\
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/cross-spawn-npm-7.0.3-e4ff3e65b3-10c0.zip/node_modules/cross-spawn/",\
@@ -708,6 +1131,22 @@ const RAW_RUNTIME_STATE =
           ["path-key", "npm:3.1.1"],\
           ["shebang-command", "npm:2.0.0"],\
           ["which", "npm:2.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["cz-conventional-changelog", [\
+      ["npm:3.3.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/cz-conventional-changelog-npm-3.3.0-46c1d2629a-10c0.zip/node_modules/cz-conventional-changelog/",\
+        "packageDependencies": [\
+          ["cz-conventional-changelog", "npm:3.3.0"],\
+          ["@commitlint/load", "npm:19.2.0"],\
+          ["chalk", "npm:2.4.2"],\
+          ["commitizen", "npm:4.3.0"],\
+          ["conventional-commit-types", "npm:3.0.0"],\
+          ["lodash.map", "npm:4.6.0"],\
+          ["longest", "npm:2.0.1"],\
+          ["word-wrap", "npm:1.2.5"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -740,6 +1179,43 @@ const RAW_RUNTIME_STATE =
         "packagePeers": [\
           "@types/supports-color",\
           "supports-color"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["dedent", [\
+      ["npm:0.7.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/dedent-npm-0.7.0-2dbb45a4c5-10c0.zip/node_modules/dedent/",\
+        "packageDependencies": [\
+          ["dedent", "npm:0.7.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["defaults", [\
+      ["npm:1.0.4", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/defaults-npm-1.0.4-f3fbaf2528-10c0.zip/node_modules/defaults/",\
+        "packageDependencies": [\
+          ["defaults", "npm:1.0.4"],\
+          ["clone", "npm:1.0.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["detect-file", [\
+      ["npm:1.0.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/detect-file-npm-1.0.0-a22ca7c5b6-10c0.zip/node_modules/detect-file/",\
+        "packageDependencies": [\
+          ["detect-file", "npm:1.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["detect-indent", [\
+      ["npm:6.1.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/detect-indent-npm-6.1.0-d8c441ff7a-10c0.zip/node_modules/detect-indent/",\
+        "packageDependencies": [\
+          ["detect-indent", "npm:6.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -797,6 +1273,16 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["error-ex", [\
+      ["npm:1.3.2", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/error-ex-npm-1.3.2-5654f80c0f-10c0.zip/node_modules/error-ex/",\
+        "packageDependencies": [\
+          ["error-ex", "npm:1.3.2"],\
+          ["is-arrayish", "npm:0.2.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["esbuild", [\
       ["npm:0.17.19", {\
         "packageLocation": "./.yarn/unplugged/esbuild-npm-0.17.19-f690397756/node_modules/esbuild/",\
@@ -829,6 +1315,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["escape-string-regexp", [\
+      ["npm:1.0.5", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/escape-string-regexp-npm-1.0.5-3284de402f-10c0.zip/node_modules/escape-string-regexp/",\
+        "packageDependencies": [\
+          ["escape-string-regexp", "npm:1.0.5"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:4.0.0", {\
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/escape-string-regexp-npm-4.0.0-4b531d8d59-10c0.zip/node_modules/escape-string-regexp/",\
         "packageDependencies": [\
@@ -855,11 +1348,52 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["expand-tilde", [\
+      ["npm:2.0.2", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/expand-tilde-npm-2.0.2-a4020a62f5-10c0.zip/node_modules/expand-tilde/",\
+        "packageDependencies": [\
+          ["expand-tilde", "npm:2.0.2"],\
+          ["homedir-polyfill", "npm:1.0.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["exponential-backoff", [\
       ["npm:3.1.1", {\
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/exponential-backoff-npm-3.1.1-04df458b30-10c0.zip/node_modules/exponential-backoff/",\
         "packageDependencies": [\
           ["exponential-backoff", "npm:3.1.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["external-editor", [\
+      ["npm:3.1.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/external-editor-npm-3.1.0-878e7807af-10c0.zip/node_modules/external-editor/",\
+        "packageDependencies": [\
+          ["external-editor", "npm:3.1.0"],\
+          ["chardet", "npm:0.7.0"],\
+          ["iconv-lite", "npm:0.4.24"],\
+          ["tmp", "npm:0.0.33"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["fast-deep-equal", [\
+      ["npm:3.1.3", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/fast-deep-equal-npm-3.1.3-790edcfcf5-10c0.zip/node_modules/fast-deep-equal/",\
+        "packageDependencies": [\
+          ["fast-deep-equal", "npm:3.1.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["figures", [\
+      ["npm:3.2.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/figures-npm-3.2.0-85d357e955-10c0.zip/node_modules/figures/",\
+        "packageDependencies": [\
+          ["figures", "npm:3.2.0"],\
+          ["escape-string-regexp", "npm:1.0.5"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -872,6 +1406,47 @@ const RAW_RUNTIME_STATE =
           ["to-regex-range", "npm:5.0.1"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:7.1.1", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/fill-range-npm-7.1.1-bf491486db-10c0.zip/node_modules/fill-range/",\
+        "packageDependencies": [\
+          ["fill-range", "npm:7.1.1"],\
+          ["to-regex-range", "npm:5.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["find-node-modules", [\
+      ["npm:2.1.3", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/find-node-modules-npm-2.1.3-431b2c5604-10c0.zip/node_modules/find-node-modules/",\
+        "packageDependencies": [\
+          ["find-node-modules", "npm:2.1.3"],\
+          ["findup-sync", "npm:4.0.0"],\
+          ["merge", "npm:2.1.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["find-root", [\
+      ["npm:1.1.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/find-root-npm-1.1.0-a16a94005f-10c0.zip/node_modules/find-root/",\
+        "packageDependencies": [\
+          ["find-root", "npm:1.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["findup-sync", [\
+      ["npm:4.0.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/findup-sync-npm-4.0.0-3884c677a0-10c0.zip/node_modules/findup-sync/",\
+        "packageDependencies": [\
+          ["findup-sync", "npm:4.0.0"],\
+          ["detect-file", "npm:1.0.0"],\
+          ["is-glob", "npm:4.0.3"],\
+          ["micromatch", "npm:4.0.7"],\
+          ["resolve-dir", "npm:1.0.1"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["foreground-child", [\
@@ -881,6 +1456,19 @@ const RAW_RUNTIME_STATE =
           ["foreground-child", "npm:3.1.1"],\
           ["cross-spawn", "npm:7.0.3"],\
           ["signal-exit", "npm:4.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["fs-extra", [\
+      ["npm:9.1.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/fs-extra-npm-9.1.0-983c2ddb4c-10c0.zip/node_modules/fs-extra/",\
+        "packageDependencies": [\
+          ["fs-extra", "npm:9.1.0"],\
+          ["at-least-node", "npm:1.0.0"],\
+          ["graceful-fs", "npm:4.2.11"],\
+          ["jsonfile", "npm:6.1.0"],\
+          ["universalify", "npm:2.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -903,6 +1491,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["fs.realpath", [\
+      ["npm:1.0.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/fs.realpath-npm-1.0.0-c8f05d8126-10c0.zip/node_modules/fs.realpath/",\
+        "packageDependencies": [\
+          ["fs.realpath", "npm:1.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["fsevents", [\
       ["patch:fsevents@npm%3A2.3.3#optional!builtin<compat/fsevents>::version=2.3.3&hash=df0bf1", {\
         "packageLocation": "./.yarn/unplugged/fsevents-patch-6b67494872/node_modules/fsevents/",\
@@ -920,16 +1517,6 @@ const RAW_RUNTIME_STATE =
           ["function-bind", "npm:1.1.2"]\
         ],\
         "linkType": "HARD"\
-      }]\
-    ]],\
-    ["garden-monorepo", [\
-      ["workspace:.", {\
-        "packageLocation": "./",\
-        "packageDependencies": [\
-          ["garden-monorepo", "workspace:."],\
-          ["wrangler", "virtual:252f2cfcbdbc265c72f0f5c2c896d22c085360f342c963193603894b293fe95dadec75892352f8af31df197a6b2f05104ffad522dda5b850a13cb761bbf7f25f#npm:3.58.0"]\
-        ],\
-        "linkType": "SOFT"\
       }]\
     ]],\
     ["get-source", [\
@@ -955,6 +1542,19 @@ const RAW_RUNTIME_STATE =
           ["path-scurry", "npm:1.10.1"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:7.2.3", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/glob-npm-7.2.3-2d866d17a5-10c0.zip/node_modules/glob/",\
+        "packageDependencies": [\
+          ["glob", "npm:7.2.3"],\
+          ["fs.realpath", "npm:1.0.0"],\
+          ["inflight", "npm:1.0.6"],\
+          ["inherits", "npm:2.0.4"],\
+          ["minimatch", "npm:3.1.2"],\
+          ["once", "npm:1.4.0"],\
+          ["path-is-absolute", "npm:1.0.1"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["glob-parent", [\
@@ -976,11 +1576,63 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["global-directory", [\
+      ["npm:4.0.1", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/global-directory-npm-4.0.1-1de95382fd-10c0.zip/node_modules/global-directory/",\
+        "packageDependencies": [\
+          ["global-directory", "npm:4.0.1"],\
+          ["ini", "npm:4.1.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["global-modules", [\
+      ["npm:1.0.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/global-modules-npm-1.0.0-70c522e57a-10c0.zip/node_modules/global-modules/",\
+        "packageDependencies": [\
+          ["global-modules", "npm:1.0.0"],\
+          ["global-prefix", "npm:1.0.2"],\
+          ["is-windows", "npm:1.0.2"],\
+          ["resolve-dir", "npm:1.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["global-prefix", [\
+      ["npm:1.0.2", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/global-prefix-npm-1.0.2-a96996834b-10c0.zip/node_modules/global-prefix/",\
+        "packageDependencies": [\
+          ["global-prefix", "npm:1.0.2"],\
+          ["expand-tilde", "npm:2.0.2"],\
+          ["homedir-polyfill", "npm:1.0.3"],\
+          ["ini", "npm:1.3.8"],\
+          ["is-windows", "npm:1.0.2"],\
+          ["which", "npm:1.3.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["graceful-fs", [\
       ["npm:4.2.11", {\
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/graceful-fs-npm-4.2.11-24bb648a68-10c0.zip/node_modules/graceful-fs/",\
         "packageDependencies": [\
           ["graceful-fs", "npm:4.2.11"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["has-flag", [\
+      ["npm:3.0.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/has-flag-npm-3.0.0-16ac11fe05-10c0.zip/node_modules/has-flag/",\
+        "packageDependencies": [\
+          ["has-flag", "npm:3.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:4.0.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/has-flag-npm-4.0.0-32af9f0536-10c0.zip/node_modules/has-flag/",\
+        "packageDependencies": [\
+          ["has-flag", "npm:4.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -991,6 +1643,16 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["hasown", "npm:2.0.2"],\
           ["function-bind", "npm:1.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["homedir-polyfill", [\
+      ["npm:1.0.3", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/homedir-polyfill-npm-1.0.3-da1a29ce00-10c0.zip/node_modules/homedir-polyfill/",\
+        "packageDependencies": [\
+          ["homedir-polyfill", "npm:1.0.3"],\
+          ["parse-passwd", "npm:1.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1027,11 +1689,48 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["iconv-lite", [\
+      ["npm:0.4.24", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/iconv-lite-npm-0.4.24-c5c4ac6695-10c0.zip/node_modules/iconv-lite/",\
+        "packageDependencies": [\
+          ["iconv-lite", "npm:0.4.24"],\
+          ["safer-buffer", "npm:2.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:0.6.3", {\
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/iconv-lite-npm-0.6.3-24b8aae27e-10c0.zip/node_modules/iconv-lite/",\
         "packageDependencies": [\
           ["iconv-lite", "npm:0.6.3"],\
           ["safer-buffer", "npm:2.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["ieee754", [\
+      ["npm:1.2.1", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/ieee754-npm-1.2.1-fb63b3caeb-10c0.zip/node_modules/ieee754/",\
+        "packageDependencies": [\
+          ["ieee754", "npm:1.2.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["import-fresh", [\
+      ["npm:3.3.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/import-fresh-npm-3.3.0-3e34265ca9-10c0.zip/node_modules/import-fresh/",\
+        "packageDependencies": [\
+          ["import-fresh", "npm:3.3.0"],\
+          ["parent-module", "npm:1.0.1"],\
+          ["resolve-from", "npm:4.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["import-meta-resolve", [\
+      ["npm:4.1.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/import-meta-resolve-npm-4.1.0-6e93749986-10c0.zip/node_modules/import-meta-resolve/",\
+        "packageDependencies": [\
+          ["import-meta-resolve", "npm:4.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1054,11 +1753,80 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["inflight", [\
+      ["npm:1.0.6", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/inflight-npm-1.0.6-ccedb4b908-10c0.zip/node_modules/inflight/",\
+        "packageDependencies": [\
+          ["inflight", "npm:1.0.6"],\
+          ["once", "npm:1.4.0"],\
+          ["wrappy", "npm:1.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["inherits", [\
+      ["npm:2.0.4", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/inherits-npm-2.0.4-c66b3957a0-10c0.zip/node_modules/inherits/",\
+        "packageDependencies": [\
+          ["inherits", "npm:2.0.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["ini", [\
+      ["npm:1.3.8", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/ini-npm-1.3.8-fb5040b4c0-10c0.zip/node_modules/ini/",\
+        "packageDependencies": [\
+          ["ini", "npm:1.3.8"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:4.1.1", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/ini-npm-4.1.1-01c2cbda7b-10c0.zip/node_modules/ini/",\
+        "packageDependencies": [\
+          ["ini", "npm:4.1.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["inquirer", [\
+      ["npm:8.2.5", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/inquirer-npm-8.2.5-ffce7548f9-10c0.zip/node_modules/inquirer/",\
+        "packageDependencies": [\
+          ["inquirer", "npm:8.2.5"],\
+          ["ansi-escapes", "npm:4.3.2"],\
+          ["chalk", "npm:4.1.2"],\
+          ["cli-cursor", "npm:3.1.0"],\
+          ["cli-width", "npm:3.0.0"],\
+          ["external-editor", "npm:3.1.0"],\
+          ["figures", "npm:3.2.0"],\
+          ["lodash", "npm:4.17.21"],\
+          ["mute-stream", "npm:0.0.8"],\
+          ["ora", "npm:5.4.1"],\
+          ["run-async", "npm:2.4.1"],\
+          ["rxjs", "npm:7.8.1"],\
+          ["string-width", "npm:4.2.3"],\
+          ["strip-ansi", "npm:6.0.1"],\
+          ["through", "npm:2.3.8"],\
+          ["wrap-ansi", "npm:7.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["ip", [\
       ["npm:2.0.0", {\
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/ip-npm-2.0.0-204facb3cc-10c0.zip/node_modules/ip/",\
         "packageDependencies": [\
           ["ip", "npm:2.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["is-arrayish", [\
+      ["npm:0.2.1", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/is-arrayish-npm-0.2.1-23927dfb15-10c0.zip/node_modules/is-arrayish/",\
+        "packageDependencies": [\
+          ["is-arrayish", "npm:0.2.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1111,6 +1879,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["is-interactive", [\
+      ["npm:1.0.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/is-interactive-npm-1.0.0-7ff7c6e04a-10c0.zip/node_modules/is-interactive/",\
+        "packageDependencies": [\
+          ["is-interactive", "npm:1.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["is-lambda", [\
       ["npm:1.0.1", {\
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/is-lambda-npm-1.0.1-7ab55bc8a8-10c0.zip/node_modules/is-lambda/",\
@@ -1125,6 +1902,33 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/is-number-npm-7.0.0-060086935c-10c0.zip/node_modules/is-number/",\
         "packageDependencies": [\
           ["is-number", "npm:7.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["is-unicode-supported", [\
+      ["npm:0.1.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/is-unicode-supported-npm-0.1.0-0833e1bbfb-10c0.zip/node_modules/is-unicode-supported/",\
+        "packageDependencies": [\
+          ["is-unicode-supported", "npm:0.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["is-utf8", [\
+      ["npm:0.2.1", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/is-utf8-npm-0.2.1-46ab364e2f-10c0.zip/node_modules/is-utf8/",\
+        "packageDependencies": [\
+          ["is-utf8", "npm:0.2.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["is-windows", [\
+      ["npm:1.0.2", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/is-windows-npm-1.0.2-898cd6f3d7-10c0.zip/node_modules/is-windows/",\
+        "packageDependencies": [\
+          ["is-windows", "npm:1.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1152,6 +1956,146 @@ const RAW_RUNTIME_STATE =
           ["jackspeak", "npm:2.3.6"],\
           ["@isaacs/cliui", "npm:8.0.2"],\
           ["@pkgjs/parseargs", "npm:0.11.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["jiti", [\
+      ["npm:1.21.3", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/jiti-npm-1.21.3-d7ae287a4d-10c0.zip/node_modules/jiti/",\
+        "packageDependencies": [\
+          ["jiti", "npm:1.21.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["js-tokens", [\
+      ["npm:4.0.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/js-tokens-npm-4.0.0-0ac852e9e2-10c0.zip/node_modules/js-tokens/",\
+        "packageDependencies": [\
+          ["js-tokens", "npm:4.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["js-yaml", [\
+      ["npm:4.1.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/js-yaml-npm-4.1.0-3606f32312-10c0.zip/node_modules/js-yaml/",\
+        "packageDependencies": [\
+          ["js-yaml", "npm:4.1.0"],\
+          ["argparse", "npm:2.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["json-parse-even-better-errors", [\
+      ["npm:2.3.1", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/json-parse-even-better-errors-npm-2.3.1-144d62256e-10c0.zip/node_modules/json-parse-even-better-errors/",\
+        "packageDependencies": [\
+          ["json-parse-even-better-errors", "npm:2.3.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["json-schema-traverse", [\
+      ["npm:1.0.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/json-schema-traverse-npm-1.0.0-fb3684f4f0-10c0.zip/node_modules/json-schema-traverse/",\
+        "packageDependencies": [\
+          ["json-schema-traverse", "npm:1.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["jsonfile", [\
+      ["npm:6.1.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/jsonfile-npm-6.1.0-20a4796cee-10c0.zip/node_modules/jsonfile/",\
+        "packageDependencies": [\
+          ["jsonfile", "npm:6.1.0"],\
+          ["graceful-fs", "npm:4.2.11"],\
+          ["universalify", "npm:2.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["lines-and-columns", [\
+      ["npm:1.2.4", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/lines-and-columns-npm-1.2.4-d6c7cc5799-10c0.zip/node_modules/lines-and-columns/",\
+        "packageDependencies": [\
+          ["lines-and-columns", "npm:1.2.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["lodash", [\
+      ["npm:4.17.21", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/lodash-npm-4.17.21-6382451519-10c0.zip/node_modules/lodash/",\
+        "packageDependencies": [\
+          ["lodash", "npm:4.17.21"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["lodash.isplainobject", [\
+      ["npm:4.0.6", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/lodash.isplainobject-npm-4.0.6-d73937742f-10c0.zip/node_modules/lodash.isplainobject/",\
+        "packageDependencies": [\
+          ["lodash.isplainobject", "npm:4.0.6"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["lodash.map", [\
+      ["npm:4.6.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/lodash.map-npm-4.6.0-8013e2ad18-10c0.zip/node_modules/lodash.map/",\
+        "packageDependencies": [\
+          ["lodash.map", "npm:4.6.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["lodash.merge", [\
+      ["npm:4.6.2", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/lodash.merge-npm-4.6.2-77cb4416bf-10c0.zip/node_modules/lodash.merge/",\
+        "packageDependencies": [\
+          ["lodash.merge", "npm:4.6.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["lodash.mergewith", [\
+      ["npm:4.6.2", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/lodash.mergewith-npm-4.6.2-7d2d4201ec-10c0.zip/node_modules/lodash.mergewith/",\
+        "packageDependencies": [\
+          ["lodash.mergewith", "npm:4.6.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["lodash.uniq", [\
+      ["npm:4.5.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/lodash.uniq-npm-4.5.0-7c270dca85-10c0.zip/node_modules/lodash.uniq/",\
+        "packageDependencies": [\
+          ["lodash.uniq", "npm:4.5.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["log-symbols", [\
+      ["npm:4.1.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/log-symbols-npm-4.1.0-0a13492d8b-10c0.zip/node_modules/log-symbols/",\
+        "packageDependencies": [\
+          ["log-symbols", "npm:4.1.0"],\
+          ["chalk", "npm:4.1.2"],\
+          ["is-unicode-supported", "npm:0.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["longest", [\
+      ["npm:2.0.1", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/longest-npm-2.0.1-4579de9937-10c0.zip/node_modules/longest/",\
+        "packageDependencies": [\
+          ["longest", "npm:2.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1203,11 +2147,40 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["merge", [\
+      ["npm:2.1.1", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/merge-npm-2.1.1-90e7307c49-10c0.zip/node_modules/merge/",\
+        "packageDependencies": [\
+          ["merge", "npm:2.1.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["micromatch", [\
+      ["npm:4.0.7", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/micromatch-npm-4.0.7-28fb7387ee-10c0.zip/node_modules/micromatch/",\
+        "packageDependencies": [\
+          ["micromatch", "npm:4.0.7"],\
+          ["braces", "npm:3.0.3"],\
+          ["picomatch", "npm:2.3.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["mime", [\
       ["npm:3.0.0", {\
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/mime-npm-3.0.0-8d911e4c06-10c0.zip/node_modules/mime/",\
         "packageDependencies": [\
           ["mime", "npm:3.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["mimic-fn", [\
+      ["npm:2.1.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/mimic-fn-npm-2.1.0-4fbeb3abb4-10c0.zip/node_modules/mimic-fn/",\
+        "packageDependencies": [\
+          ["mimic-fn", "npm:2.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1234,11 +2207,28 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["minimatch", [\
+      ["npm:3.1.2", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/minimatch-npm-3.1.2-9405269906-10c0.zip/node_modules/minimatch/",\
+        "packageDependencies": [\
+          ["minimatch", "npm:3.1.2"],\
+          ["brace-expansion", "npm:1.1.11"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:9.0.3", {\
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/minimatch-npm-9.0.3-69d7d6fad5-10c0.zip/node_modules/minimatch/",\
         "packageDependencies": [\
           ["minimatch", "npm:9.0.3"],\
           ["brace-expansion", "npm:2.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["minimist", [\
+      ["npm:1.2.7", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/minimist-npm-1.2.7-51d33b1371-10c0.zip/node_modules/minimist/",\
+        "packageDependencies": [\
+          ["minimist", "npm:1.2.7"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1358,6 +2348,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["mute-stream", [\
+      ["npm:0.0.8", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/mute-stream-npm-0.0.8-489a7d6c2b-10c0.zip/node_modules/mute-stream/",\
+        "packageDependencies": [\
+          ["mute-stream", "npm:0.0.8"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["nanoid", [\
       ["npm:3.3.7", {\
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/nanoid-npm-3.3.7-98824ba130-10c0.zip/node_modules/nanoid/",\
@@ -1423,12 +2422,100 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["once", [\
+      ["npm:1.4.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/once-npm-1.4.0-ccf03ef07a-10c0.zip/node_modules/once/",\
+        "packageDependencies": [\
+          ["once", "npm:1.4.0"],\
+          ["wrappy", "npm:1.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["onetime", [\
+      ["npm:5.1.2", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/onetime-npm-5.1.2-3ed148fa42-10c0.zip/node_modules/onetime/",\
+        "packageDependencies": [\
+          ["onetime", "npm:5.1.2"],\
+          ["mimic-fn", "npm:2.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["ora", [\
+      ["npm:5.4.1", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/ora-npm-5.4.1-4f0343adb7-10c0.zip/node_modules/ora/",\
+        "packageDependencies": [\
+          ["ora", "npm:5.4.1"],\
+          ["bl", "npm:4.1.0"],\
+          ["chalk", "npm:4.1.2"],\
+          ["cli-cursor", "npm:3.1.0"],\
+          ["cli-spinners", "npm:2.9.2"],\
+          ["is-interactive", "npm:1.0.0"],\
+          ["is-unicode-supported", "npm:0.1.0"],\
+          ["log-symbols", "npm:4.1.0"],\
+          ["strip-ansi", "npm:6.0.1"],\
+          ["wcwidth", "npm:1.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["os-tmpdir", [\
+      ["npm:1.0.2", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/os-tmpdir-npm-1.0.2-e305b0689b-10c0.zip/node_modules/os-tmpdir/",\
+        "packageDependencies": [\
+          ["os-tmpdir", "npm:1.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["p-map", [\
       ["npm:4.0.0", {\
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/p-map-npm-4.0.0-4677ae07c7-10c0.zip/node_modules/p-map/",\
         "packageDependencies": [\
           ["p-map", "npm:4.0.0"],\
           ["aggregate-error", "npm:3.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["parent-module", [\
+      ["npm:1.0.1", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/parent-module-npm-1.0.1-1fae11b095-10c0.zip/node_modules/parent-module/",\
+        "packageDependencies": [\
+          ["parent-module", "npm:1.0.1"],\
+          ["callsites", "npm:3.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["parse-json", [\
+      ["npm:5.2.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/parse-json-npm-5.2.0-00a63b1199-10c0.zip/node_modules/parse-json/",\
+        "packageDependencies": [\
+          ["parse-json", "npm:5.2.0"],\
+          ["@babel/code-frame", "npm:7.24.7"],\
+          ["error-ex", "npm:1.3.2"],\
+          ["json-parse-even-better-errors", "npm:2.3.1"],\
+          ["lines-and-columns", "npm:1.2.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["parse-passwd", [\
+      ["npm:1.0.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/parse-passwd-npm-1.0.0-ace6effa1d-10c0.zip/node_modules/parse-passwd/",\
+        "packageDependencies": [\
+          ["parse-passwd", "npm:1.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["path-is-absolute", [\
+      ["npm:1.0.1", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/path-is-absolute-npm-1.0.1-31bc695ffd-10c0.zip/node_modules/path-is-absolute/",\
+        "packageDependencies": [\
+          ["path-is-absolute", "npm:1.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1471,6 +2558,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["picocolors", [\
+      ["npm:1.0.1", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/picocolors-npm-1.0.1-39442f3da8-10c0.zip/node_modules/picocolors/",\
+        "packageDependencies": [\
+          ["picocolors", "npm:1.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["picomatch", [\
       ["npm:2.3.1", {\
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/picomatch-npm-2.3.1-c782cfd986-10c0.zip/node_modules/picomatch/",\
@@ -1509,12 +2605,42 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["punycode", [\
+      ["npm:2.3.1", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/punycode-npm-2.3.1-97543c420d-10c0.zip/node_modules/punycode/",\
+        "packageDependencies": [\
+          ["punycode", "npm:2.3.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["readable-stream", [\
+      ["npm:3.6.2", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/readable-stream-npm-3.6.2-d2a6069158-10c0.zip/node_modules/readable-stream/",\
+        "packageDependencies": [\
+          ["readable-stream", "npm:3.6.2"],\
+          ["inherits", "npm:2.0.4"],\
+          ["string_decoder", "npm:1.3.0"],\
+          ["util-deprecate", "npm:1.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["readdirp", [\
       ["npm:3.6.0", {\
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/readdirp-npm-3.6.0-f950cc74ab-10c0.zip/node_modules/readdirp/",\
         "packageDependencies": [\
           ["readdirp", "npm:3.6.0"],\
           ["picomatch", "npm:2.3.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["require-from-string", [\
+      ["npm:2.0.2", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/require-from-string-npm-2.0.2-8557e0db12-10c0.zip/node_modules/require-from-string/",\
+        "packageDependencies": [\
+          ["require-from-string", "npm:2.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1531,11 +2657,49 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["resolve-dir", [\
+      ["npm:1.0.1", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/resolve-dir-npm-1.0.1-0a95903c18-10c0.zip/node_modules/resolve-dir/",\
+        "packageDependencies": [\
+          ["resolve-dir", "npm:1.0.1"],\
+          ["expand-tilde", "npm:2.0.2"],\
+          ["global-modules", "npm:1.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["resolve-from", [\
+      ["npm:4.0.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/resolve-from-npm-4.0.0-f758ec21bf-10c0.zip/node_modules/resolve-from/",\
+        "packageDependencies": [\
+          ["resolve-from", "npm:4.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:5.0.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/resolve-from-npm-5.0.0-15c9db4d33-10c0.zip/node_modules/resolve-from/",\
+        "packageDependencies": [\
+          ["resolve-from", "npm:5.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["resolve.exports", [\
       ["npm:2.0.2", {\
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/resolve.exports-npm-2.0.2-f59b42bbe5-10c0.zip/node_modules/resolve.exports/",\
         "packageDependencies": [\
           ["resolve.exports", "npm:2.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["restore-cursor", [\
+      ["npm:3.1.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/restore-cursor-npm-3.1.0-52c5a4c98f-10c0.zip/node_modules/restore-cursor/",\
+        "packageDependencies": [\
+          ["restore-cursor", "npm:3.1.0"],\
+          ["onetime", "npm:5.1.2"],\
+          ["signal-exit", "npm:3.0.7"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1577,6 +2741,34 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["rollup-pluginutils", "npm:2.8.2"],\
           ["estree-walker", "npm:0.6.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["run-async", [\
+      ["npm:2.4.1", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/run-async-npm-2.4.1-a94bb90861-10c0.zip/node_modules/run-async/",\
+        "packageDependencies": [\
+          ["run-async", "npm:2.4.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["rxjs", [\
+      ["npm:7.8.1", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/rxjs-npm-7.8.1-41c443a75b-10c0.zip/node_modules/rxjs/",\
+        "packageDependencies": [\
+          ["rxjs", "npm:7.8.1"],\
+          ["tslib", "npm:2.6.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["safe-buffer", [\
+      ["npm:5.2.1", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/safe-buffer-npm-5.2.1-3481c8aa9b-10c0.zip/node_modules/safe-buffer/",\
+        "packageDependencies": [\
+          ["safe-buffer", "npm:5.2.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1631,6 +2823,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["signal-exit", [\
+      ["npm:3.0.7", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/signal-exit-npm-3.0.7-bd270458a3-10c0.zip/node_modules/signal-exit/",\
+        "packageDependencies": [\
+          ["signal-exit", "npm:3.0.7"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:4.1.0", {\
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/signal-exit-npm-4.1.0-61fb957687-10c0.zip/node_modules/signal-exit/",\
         "packageDependencies": [\
@@ -1741,6 +2940,16 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["string_decoder", [\
+      ["npm:1.3.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/string_decoder-npm-1.3.0-2422117fd0-10c0.zip/node_modules/string_decoder/",\
+        "packageDependencies": [\
+          ["string_decoder", "npm:1.3.0"],\
+          ["safe-buffer", "npm:5.2.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["strip-ansi", [\
       ["npm:6.0.1", {\
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/strip-ansi-npm-6.0.1-caddc7cb40-10c0.zip/node_modules/strip-ansi/",\
@@ -1755,6 +2964,42 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["strip-ansi", "npm:7.1.0"],\
           ["ansi-regex", "npm:6.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["strip-bom", [\
+      ["npm:4.0.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/strip-bom-npm-4.0.0-97d367a64d-10c0.zip/node_modules/strip-bom/",\
+        "packageDependencies": [\
+          ["strip-bom", "npm:4.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["strip-json-comments", [\
+      ["npm:3.1.1", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/strip-json-comments-npm-3.1.1-dcb2324823-10c0.zip/node_modules/strip-json-comments/",\
+        "packageDependencies": [\
+          ["strip-json-comments", "npm:3.1.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["supports-color", [\
+      ["npm:5.5.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/supports-color-npm-5.5.0-183ac537bc-10c0.zip/node_modules/supports-color/",\
+        "packageDependencies": [\
+          ["supports-color", "npm:5.5.0"],\
+          ["has-flag", "npm:3.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:7.2.0", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/supports-color-npm-7.2.0-606bfcf7da-10c0.zip/node_modules/supports-color/",\
+        "packageDependencies": [\
+          ["supports-color", "npm:7.2.0"],\
+          ["has-flag", "npm:4.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1783,6 +3028,25 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["through", [\
+      ["npm:2.3.8", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/through-npm-2.3.8-df5f72a16e-10c0.zip/node_modules/through/",\
+        "packageDependencies": [\
+          ["through", "npm:2.3.8"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["tmp", [\
+      ["npm:0.0.33", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/tmp-npm-0.0.33-bcbf65df2a-10c0.zip/node_modules/tmp/",\
+        "packageDependencies": [\
+          ["tmp", "npm:0.0.33"],\
+          ["os-tmpdir", "npm:1.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["to-regex-range", [\
       ["npm:5.0.1", {\
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/to-regex-range-npm-5.0.1-f1e8263b00-10c0.zip/node_modules/to-regex-range/",\
@@ -1798,6 +3062,22 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/tslib-npm-2.6.2-4fc8c068d9-10c0.zip/node_modules/tslib/",\
         "packageDependencies": [\
           ["tslib", "npm:2.6.2"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:2.6.3", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/tslib-npm-2.6.3-0fd136b3be-10c0.zip/node_modules/tslib/",\
+        "packageDependencies": [\
+          ["tslib", "npm:2.6.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["type-fest", [\
+      ["npm:0.21.3", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/type-fest-npm-0.21.3-5ff2a9c6fd-10c0.zip/node_modules/type-fest/",\
+        "packageDependencies": [\
+          ["type-fest", "npm:0.21.3"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1841,7 +3121,53 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["universalify", [\
+      ["npm:2.0.1", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/universalify-npm-2.0.1-040ba5a21e-10c0.zip/node_modules/universalify/",\
+        "packageDependencies": [\
+          ["universalify", "npm:2.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["uri-js", [\
+      ["npm:4.4.1", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/uri-js-npm-4.4.1-66d11cbcaf-10c0.zip/node_modules/uri-js/",\
+        "packageDependencies": [\
+          ["uri-js", "npm:4.4.1"],\
+          ["punycode", "npm:2.3.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["util-deprecate", [\
+      ["npm:1.0.2", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/util-deprecate-npm-1.0.2-e3fe1a219c-10c0.zip/node_modules/util-deprecate/",\
+        "packageDependencies": [\
+          ["util-deprecate", "npm:1.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["wcwidth", [\
+      ["npm:1.0.1", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/wcwidth-npm-1.0.1-05fa596453-10c0.zip/node_modules/wcwidth/",\
+        "packageDependencies": [\
+          ["wcwidth", "npm:1.0.1"],\
+          ["defaults", "npm:1.0.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["which", [\
+      ["npm:1.3.1", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/which-npm-1.3.1-f0ebb8bdd8-10c0.zip/node_modules/which/",\
+        "packageDependencies": [\
+          ["which", "npm:1.3.1"],\
+          ["isexe", "npm:2.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:2.0.2", {\
         "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/which-npm-2.0.2-320ddf72f7-10c0.zip/node_modules/which/",\
         "packageDependencies": [\
@@ -1855,6 +3181,15 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["which", "npm:4.0.0"],\
           ["isexe", "npm:3.1.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["word-wrap", [\
+      ["npm:1.2.5", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/word-wrap-npm-1.2.5-42d00c4b09-10c0.zip/node_modules/word-wrap/",\
+        "packageDependencies": [\
+          ["word-wrap", "npm:1.2.5"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1881,14 +3216,14 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:252f2cfcbdbc265c72f0f5c2c896d22c085360f342c963193603894b293fe95dadec75892352f8af31df197a6b2f05104ffad522dda5b850a13cb761bbf7f25f#npm:3.58.0", {\
-        "packageLocation": "./.yarn/__virtual__/wrangler-virtual-efb7e05efe/5/home/gildedguy/.yarn/berry/cache/wrangler-npm-3.58.0-35d12f6611-10c0.zip/node_modules/wrangler/",\
+      ["virtual:204731a4a9e3c221236a6771df63f28776d69abc746be7993a7fa7c4a4db8315462d51135672faeb9f91989b955e9cdcc40b0604dfe0e846e7ec08aa0e2af73b#npm:3.58.0", {\
+        "packageLocation": "./.yarn/__virtual__/wrangler-virtual-a8cb9d3314/5/home/gildedguy/.yarn/berry/cache/wrangler-npm-3.58.0-35d12f6611-10c0.zip/node_modules/wrangler/",\
         "packageDependencies": [\
-          ["wrangler", "virtual:252f2cfcbdbc265c72f0f5c2c896d22c085360f342c963193603894b293fe95dadec75892352f8af31df197a6b2f05104ffad522dda5b850a13cb761bbf7f25f#npm:3.58.0"],\
+          ["wrangler", "virtual:204731a4a9e3c221236a6771df63f28776d69abc746be7993a7fa7c4a4db8315462d51135672faeb9f91989b955e9cdcc40b0604dfe0e846e7ec08aa0e2af73b#npm:3.58.0"],\
           ["@cloudflare/kv-asset-handler", "npm:0.3.2"],\
           ["@cloudflare/workers-types", null],\
-          ["@esbuild-plugins/node-globals-polyfill", "virtual:efb7e05efe5c688d90e8488a5e626c9babc35359bca302374d750445298b8461bca8945e15fc4a860f615bd298f7cc61bbffbf536d56ddf6e8517bdc03718329#npm:0.2.3"],\
-          ["@esbuild-plugins/node-modules-polyfill", "virtual:efb7e05efe5c688d90e8488a5e626c9babc35359bca302374d750445298b8461bca8945e15fc4a860f615bd298f7cc61bbffbf536d56ddf6e8517bdc03718329#npm:0.2.2"],\
+          ["@esbuild-plugins/node-globals-polyfill", "virtual:a8cb9d331451de9d9cd32e65f75a502fd8011f38cb3b137e7922e6f6561ede7ed5e0441ed0d0ec699f46beba40ecaccddfa8e78b52fe7147a3f6c3988ab50e61#npm:0.2.3"],\
+          ["@esbuild-plugins/node-modules-polyfill", "virtual:a8cb9d331451de9d9cd32e65f75a502fd8011f38cb3b137e7922e6f6561ede7ed5e0441ed0d0ec699f46beba40ecaccddfa8e78b52fe7147a3f6c3988ab50e61#npm:0.2.2"],\
           ["@types/cloudflare__workers-types", null],\
           ["blake3-wasm", "npm:2.1.5"],\
           ["chokidar", "npm:3.5.3"],\
@@ -1928,6 +3263,15 @@ const RAW_RUNTIME_STATE =
           ["ansi-styles", "npm:6.2.1"],\
           ["string-width", "npm:5.1.2"],\
           ["strip-ansi", "npm:7.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["wrappy", [\
+      ["npm:1.0.2", {\
+        "packageLocation": "../../../../home/gildedguy/.yarn/berry/cache/wrappy-npm-1.0.2-916de4d4b3-10c0.zip/node_modules/wrappy/",\
+        "packageDependencies": [\
+          ["wrappy", "npm:1.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\

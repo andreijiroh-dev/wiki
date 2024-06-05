@@ -1,7 +1,14 @@
 {
-  "name": "garden-monorepo",
+  "name": "@ajhalili2006/wiki",
   "packageManager": "yarn@4.2.2",
   "devDependencies": {
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "wrangler": "^3.58.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }
