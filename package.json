@@ -6,6 +6,11 @@
     "cz-conventional-changelog": "^3.3.0",
     "wrangler": "^3.58.0"
   },
+  "scripts": {
+    "dev": "PREVIEW_DRAFT=true pipenv run dev",
+    "build": "CI=true pipenv run build",
+    "commit": "cz --signoff"
+  },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
