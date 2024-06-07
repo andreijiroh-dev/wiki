@@ -129,8 +129,10 @@ markdown_extensions:
 nav:
   - Meta:
     - index.md
-    - Tags: tags.md
-    - "Copyright information": copyright.md
+    - tags.md
+    - migration-progress.md
+    - golinks.md
+    - copyright.md
   - Digital Garden:
     - garden/index.md
     - garden/foam.md
@@ -142,6 +144,8 @@ nav:
   - Multiverse:
     - Stellapent Cier / Gildedguy Stories:
       - multiverse/stellapent-cier/index.md
+      - Humans Behind The Lore:
+        - multiverse/stellapent-cier/mikedmoy.md
       - Episodes:
         - Story 8: multiverse/stellapent-cier/gildedguy-story-8.md
     - Hermitcraft:
