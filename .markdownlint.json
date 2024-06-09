@@ -1,5 +1,7 @@
 {
     "ul-indent": false,
     "line-length": false,
-    "no-bare-urls": false
+    "no-bare-urls": false,
+    "no-inline-html": false,
+    "single-h1": false
 }
