@@ -1,0 +1,33 @@
+name: Feedback forms for go links
+description: Submit feedback about golinks, especially wiki-specific golinks.
+title: "[golinks] "
+assignees: [ajhalili2006]
+body:
+  - type: checkboxes
+    attributes:
+      label: DO NOT SKIP THIS
+      description: Please check all boxes to continue.
+      options:
+        - label: I agree to the [Community Code of Conduct](https://andreijiroh.xyz/go/coc) and the project's contributing guidelines.
+          required: true
+  - type: dropdown
+    attributes:
+      label: Is this golink on the wiki or the general one?
+      description: |
+        Please select the URL prefix below to help me track the issue. Note that the `go/` option is reserved for internal use within my tailnet (mostly family and friends who are invited to access my devices via Tailscale).
+      multiple: false
+      options:
+        - "go.andreijiroh.xyz/"
+        - "wiki.andreijiroh.xyz/go/"
+        - "go/"
+    id: prefix
+  - type: input
+    id: url
+    attributes:
+      label: Full golink URL
+      description: Please provide the full golink for your feedback. If it is an suggestion for a new one, feel free to leave this blank.
+      placeholder: go.andreijiroh.xyz/...
+  - type: textarea
+    attributes:
+      label: Could you describe your issue?
+      description: Tell us how we can improve the service
