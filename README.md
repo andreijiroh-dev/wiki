@@ -13,7 +13,7 @@
 . <strong>You are here!</strong>
 ├── <a href="./.decontainer">.devcontainer</a> - Devcontainer files for GitHub Codespaces and Remote Dev Containers
 ├── <a href="./.foam">.foam</a>
-    ├── <a href="./.foam/templates/">templates</a> - Foam templates, including daily notes
+│   └── <a href="./.foam/templates/">templates</a> - Foam templates, including daily notes
 ├── <a href="./api">api</a> - Experimential API to compliment with the wiki, currently prototyping in local devenv.
 │   └── lib
 ├── <a href="./overrides/">overrides</a> - theme overrides
@@ -21,8 +21,8 @@
 │   └── <a href="./overrides/hooks/">hooks</a>
 └── <a href="./src/">src</a> - Source Markdown and other files
     ├── <a href="./src/garden/">garden</a> - Digital garden
-    │   └── daily-notes
-    │       └── posts
+    │   └── <a href="./src/garden/daily-notes">daily-notes</a>
+    │       └── <a href="./src/garden/daily-notes/posts/">posts</a> (default directory for blog posts, <a href="https://squidfunk.github.io/mkdocs-material/plugins/blog/#config.post_dir">see docs</a>)
     └── <a href="./src/multiverse/">multiverse</a>
 </pre>
 
