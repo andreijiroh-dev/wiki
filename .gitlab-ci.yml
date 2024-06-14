@@ -1,6 +1,6 @@
 # The Docker image that will be used to build your app
 image:
-  name: ghcr.io/ajhalili2006/website/build-ci:latest
+  name: dock.mau.dev/andreijiroh-dev/docker-images/mkdocs-material:latest
 
 stages:
   - test
@@ -25,6 +25,9 @@ variables:
   GIT_DEPTH: "0"
 
 pages:
+  environment:
+    name: production
+    url: https://wiki.andreijiroh.xyz
   stage: build
   script:
     - pipenv run build
@@ -39,14 +42,3 @@ pages:
     # This ensures that only pushes to the default branch will trigger
     # a pages deploy
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
-
-# TODO: Automate this over at mirrors/cronjobs soon.
-.sync-branch:
-  stage: sync-repo
-  allow_failure: true
-  script:
-    - |
-      set -x
-      eval $(ssh-agent)
-      ssh-add $PWD/.secretskit/passwordless
-      git push "git@git.sr.ht:~ajhalili2006/garden-monorepo" --mirror || true
