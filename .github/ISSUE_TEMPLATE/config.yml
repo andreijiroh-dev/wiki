@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Canonical issue tracker
+    url: https://mau.dev/andreijiroh-dev/wiki/-/issues
+    about: Please file a new issue on the canonical repository instead of this mirror.
+  - name: GitHub Security Bug Bounty
+    url: https://andreijiroh.xyz/contact/security
+    about: Please report security vulnerabilities here.
