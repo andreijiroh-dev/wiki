@@ -18,7 +18,11 @@
         "daily-notes",
         "changelog",
         "multiverse",
-        "legal"
+        "legal",
+        "gitlab-ci",
+        "readme",
+        "issue-templates",
+        "github"
     ],
     "conventionalCommits.autoCommit": false,
     "git.alwaysSignOff": true,
@@ -34,7 +38,8 @@
         }
     ],
     "yaml.schemas": {
-        "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
+        "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml",
+        "https://json.schemastore.org/github-issue-config.json": ".github/ISSUE_TEMPLATE/config.yml"
     },
     "yaml.customTags": [ 
         "!ENV scalar",
@@ -44,5 +49,7 @@
         "tag:yaml.org,2002:python/name:material.extensions.emoji.twemoji",
         "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format"
     ],
-    "livePreview.defaultPreviewPath": "/overrides/main.html"
+    "emojisense.unicodeCompletionsEnabled": false,
+    "emojisense.markupCompletionsEnabled": true,
+    "emojisense.emojiDecoratorsEnabled": true
 }

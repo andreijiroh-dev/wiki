@@ -1,0 +1,17 @@
+{
+    "go link autocomplete": {
+        "body": "https:\/\/go.andreijiroh.xyz\/${0:yourmom}",
+        "prefix": "go/",
+        "description": "Autocomplete snippet for go.andreijiroh.xyz links"
+    },
+    "go link autocomplete - tailnet edition": {
+        "body": "http://go\/${0:yourmom}",
+        "prefix": "go/",
+        "description": "Autocomplete snippet for go.fawn-cod.ts.net, using its shorthand domain URL"
+    },
+    "comments": {
+        "body": "comments: true",
+        "prefix": "comments:",
+        "description": "A quick snippet to enable comments on per-page basis"
+    }
+}

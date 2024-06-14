@@ -42,7 +42,8 @@
 				"redhat.vscode-yaml",
 				"foam.foam-vscode",
 				"vivaxy.vscode-conventional-commits",
-				"eamodio.gitlens"
+				"eamodio.gitlens",
+				"bierner.emojisense"
 			]
 		}
 	}
