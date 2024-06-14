@@ -1,6 +1,7 @@
 # The Docker image that will be used to build your app
 image:
   name: dock.mau.dev/andreijiroh-dev/docker-images/mkdocs-material:latest
+  entrypoint: [ "/bin/bash" ]
 
 stages:
   - test
