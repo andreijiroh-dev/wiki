@@ -21,6 +21,18 @@ body:
         - "wiki.andreijiroh.xyz/go/"
         - "go/"
     id: prefix
+  - type: dropdown
+    id: type
+    attributes:
+      label: What type of issue this ticket should fall under?
+      description: This field should be autofilled by the redirector backend for feedback links, otherwise feel free to select one below
+      multiple: false
+      options:
+        - broken-link
+        - suggest-new-golink
+        - add-discord-server
+        - report-abuse
+        - general-feedback
   - type: input
     id: url
     attributes:
