@@ -22,7 +22,7 @@ body:
         - "go/"
     id: prefix
   - type: dropdown
-    id: type
+    id: issueType
     attributes:
       label: What type of issue this ticket should fall under?
       description: This field should be autofilled by the redirector backend for feedback links, otherwise feel free to select one below
