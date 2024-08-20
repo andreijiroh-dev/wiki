@@ -29,5 +29,5 @@ Generally speaking a wiki of sorts, powered by [[Foam]] and [[Material for Mkdoc
 
 ## More from the wiki
 
-* [Multifandom Multiverse](../multiverse/index.md)
+* [Multifandom Multiverse](https://wiki.andreijiroh.xyz/multiverse/)
 * [[golinks]] - The go links

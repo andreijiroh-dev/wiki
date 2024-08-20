@@ -141,6 +141,11 @@ nav:
       - "In the Multiverse": garden/daily-note.md
     - Andrei Jiroh in nutshell:
       - Context behind username: garden/ajhalili2006.md
+      - garden/digital-hoarding.md
+    - Tools and Cookbooks:
+      - Service Accounts:
+        - "GitHub and friends": garden/tools/github-bot.md
+      - garden/tools/dotenv-tools.md
   - Multiverse:
     - Stellapent Cier / Gildedguy Stories:
       - multiverse/stellapent-cier/index.md
@@ -198,6 +203,23 @@ plugins:
   - tags:
       tags_file: tags.md
   #- meta
+  - redirects:
+      redirect_maps:
+        "garden/daily-notes/posts/2024-06-08.md": garden/daily-notes/posts/2024-06-09.md
+        "garden/daily-notes/posts/2024-06-10.md": garden/daily-notes/posts/2024-06-12.md
+        "garden/daily-notes/posts/2024-06-11.md": garden/daily-notes/posts/2024-06-12.md
 
 hooks:
 - overrides/hooks/magiclinks_rewriter.py
+
+extra:
+  social:
+    - icon: fontawesome/brands/mastodon 
+      link: https://tilde.zone/@ajhalili2006
+      name: fediverse
+    - icon: simple/bluesky
+      link: https://bsky.app/profile/did:plc:wcx4c3osbuzrwmxkqdfqygwv
+      name: bsky
+    - icon: simple/substack
+      link: https://substack.com/@ajhalili2006
+      name: substack

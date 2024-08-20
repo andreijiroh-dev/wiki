@@ -5,6 +5,12 @@ tags:
 - meta
 ---
 
+<div class="hidden">
+<hr>
+<strong>For a better reading experience, especially in order to load embeds properly, please visit the website edition of this wiki at <a href="https://wiki.andreijiroh.xyz">wiki.andreijiroh.xyz</a>.</strong>
+<hr>
+</div>
+
 # Welcome to the wiki!
 
 This is the website version of the following repositories from @[[ajhalili2006]] himself:
@@ -21,6 +27,7 @@ The last one is still being decided on in the future.
 
 * [Personal README, extended edition](./garden/ajhalili2006.md)
 * [Daily notes and status updates feed](./garden/daily-notes/index.md) or [learn more about them](./garden/daily-note.md)
+* [In the multifandom multiverse](./multiverse/index.md)
 
 ## More from Andrei Jiroh
 
