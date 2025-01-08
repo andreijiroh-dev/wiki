@@ -7,7 +7,7 @@
 [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
 
 Home of my digital garden (and more) in one monorepo, powered by Obsidian + Foam for
-VS Code and Material for Mkdocs.
+VS Code and Material for Mkdocs for the website (hosted on Cloudflare Pages).
 
 ## Directory Map
 
