@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 site_name: ~ajhalili2006's personal wiki + digital garden
 site_author: "Andrei Jiroh Halili"
-site_url: https://wiki.andreijiroh.xyz
+site_url: https://wiki.andreijiroh.dev
 
 repo_name: sources
 repo_url: https://mau.dev/andreijiroh-dev/wiki
@@ -140,9 +140,13 @@ nav:
       - garden/daily-notes/index.md
       - "In the Multiverse": garden/daily-note.md
     - Andrei Jiroh in nutshell:
-      - Context behind username: garden/ajhalili2006.md
+      - Context behind username (and more): garden/ajhalili2006.md
       - garden/digital-hoarding.md
     - Tools and Cookbooks:
+      - Linux:
+        - garden/linux/index.md
+        - Dotfiles: garden/linux/dotfiles.md
+        - NixOS configs and friends: garden/linux/nixops-config.md
       - Service Accounts:
         - "GitHub and friends": garden/tools/github-bot.md
       - garden/tools/dotenv-tools.md

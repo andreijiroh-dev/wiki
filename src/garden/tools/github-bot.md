@@ -12,4 +12,4 @@ with the meta bot account for most operations.
 
 ## API key storage
 
-
+The tokens are securely kept via Doppler SecretOps and Vaultwarden
