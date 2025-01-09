@@ -151,6 +151,12 @@ nav:
         - "GitHub and friends": garden/tools/github-bot.md
       - garden/tools/dotenv-tools.md
   - Multiverse:
+    - Hack Club:
+      - multiverse/hackclub/index.md
+      - multiverse/hackclub/hcb.md
+      - YSWS Programs I Participated:
+        - multiverse/hackclub/ysws/arcade.md
+        - multiverse/hackclub/ysws/high-seas.md
     - Stellapent Cier / Gildedguy Stories:
       - multiverse/stellapent-cier/index.md
       - Humans Behind The Lore:

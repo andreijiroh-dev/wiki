@@ -1,32 +1,30 @@
 {#-
 
-    SPDX-License-Identifier: MIT
+SPDX-License-Identifier: MIT
+
+-#}
     
-    -#}
-    
-    {% extends "base.html" %}
-    {% block extrahead %}
+{% extends "base.html" %}
+{% block extrahead %}
 
-    <!-- meta CSS to import everything -->
-    <link rel="stylesheet" href="{{ 'assets/stylesheets/meta.css' | url }}">
+<!-- meta CSS to import everything -->
+<link rel="stylesheet" href="{{ 'assets/stylesheets/meta.css' | url }}">
 
-    <!-- hypothesis for community annotations -->
-    <script src="https://hypothes.is/embed.js" async></script>
-    {% endblock %}
+<!-- hypothesis for community annotations -->
+<script src="https://hypothes.is/embed.js" async></script>
+{% endblock %}
 
-    <!-- announcements -->
-    {% block announce %}
-    <img alt="🚧" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f6a7.svg" title=":construction:">
-    <strong>Wiki under consturction</strong> Please accept our apologies for any broken links while migrating content from
-    different repositories. <a href="/migration-progress">Learn more</a>
-    {% endblock %}
-    {% block container %}
-                <div class="md-content" data-md-component="content">
-                  <article class="md-content__inner md-typeset">
-                    {% block content %}
-                      {% include "partials/content.html" %}
-                    {% endblock %}
-                  </article>
-                </div>
-              {% endblock %}
-        
+<!-- announcements -->
+{% block announce %}
+  <img alt="🚧" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f44b.svg" title=":construction:">
+  <strong>Welcome aboard to my digital garden, Hack Clubbers!</strong> I'm still cooking some wiki pages, and <a href="/migration-progress">merging things from different places</a> behind the scenes. Happy shipping on <a href="/multiverse/hackclub/ysws/high-seas">the high seas</a> by the way.
+{% endblock %}
+{% block container %}
+  <div class="md-content" data-md-component="content">
+    <article class="md-content__inner md-typeset">
+      {% block content %}
+        {% include "partials/content.html" %}
+      {% endblock %}
+    </article>
+  </div>
+{% endblock %}
