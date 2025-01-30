@@ -10,6 +10,7 @@ title: Homelabs and InfraOps
 ## Repositories
 
 * [Nix flake-based configs for NixOS and friends](../linux/nixops-config.md)
+* [Homelab](./homelab.md)
 
 ### Recap Time Squad specifics
 

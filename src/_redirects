@@ -1,1 +1,4 @@
-/go/ajhalili2006 https://garden.andreijiroh.eu.org/garden/ajhalili2006/
+/go/:wikilink https://go.andreijiroh.dev/wiki/:wikilink
+/garden/username /garden/ajhalili2006
+/user-manual/* /garden/user-manual/:splat
+/user-manual /garden/user-manual

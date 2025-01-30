@@ -1,6 +1,8 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 site_name: ~ajhalili2006's personal wiki + digital garden
 site_author: "Andrei Jiroh Halili"
+copyright: >-
+  Copyright 2025 Andrei Jiroh Halili. Licensed under CC-BY-SA-4.0
 site_url: https://wiki.andreijiroh.dev
 
 repo_name: sources
@@ -30,7 +32,7 @@ theme:
       quote: octicons/quote-16
   favicon: assets/branding/default-favicon_512.png
   features:
-    #- announce.dismiss
+    - announce.dismiss
     - content.action.edit
     - content.action.view
     - content.code.annotate
@@ -82,7 +84,7 @@ markdown_extensions:
   - md_in_html
   - meta
   - wikilinks:
-      base_url: https://wiki.andreijiroh.xyz/go/
+      base_url: https://wiki.andreijiroh.dev/go/
   - toc:
       permalink: true
   - pymdownx.arithmatex:
@@ -129,10 +131,12 @@ markdown_extensions:
 nav:
   - Meta:
     - index.md
-    - tags.md
-    - migration-progress.md
     - golinks.md
-    - copyright.md
+    - migration-progress.md
+    - Meta:
+      - "Content Tags": tags.md
+      - Contribute: contributing.md
+      - Copyright: copyright.md
   - Digital Garden:
     - garden/index.md
     - garden/foam.md
@@ -143,13 +147,21 @@ nav:
       - Context behind username (and more): garden/ajhalili2006.md
       - garden/digital-hoarding.md
     - Tools and Cookbooks:
+      - garden/tools/index.md
       - Linux:
         - garden/linux/index.md
         - Dotfiles: garden/linux/dotfiles.md
         - NixOS configs and friends: garden/linux/nixops-config.md
+      - Homelabs and InfraOps: garden/infraops/index.md
       - Service Accounts:
         - "GitHub and friends": garden/tools/github-bot.md
       - garden/tools/dotenv-tools.md
+      - Cookbooks:
+        - cookbooks/index.md
+        - Nixpkgs:
+          - cookbooks/linux/nixpkgs/index.md
+          - Setting up for NixOS: cookbooks/linux/nixpkgs/setup-new-machine.md
+        - Dependency Updates: cookbooks/dep-update.md
   - Multiverse:
     - Hack Club:
       - multiverse/hackclub/index.md
@@ -164,7 +176,12 @@ nav:
       - Episodes:
         - Story 8: multiverse/stellapent-cier/gildedguy-story-8.md
     - Hermitcraft:
-      - World Downloads: multiverse/hermitcraft/hermitcraft-world-downloads-mirror.md
+      - World Downloads Mirror: multiverse/hermitcraft/world-downloads-mirror.md
+  - "Jiroh's Kooky Insane Stuff":
+    - kooky-insane-stuff/index.md
+    - Autistic Vocabulary:
+      - SABDFL: kooky-insane-stuff/vocabulary/sabdfl.md
+      - The Burnout Bus: kooky-insane-stuff/vocabulary/hit-by-burnout-bus.md
 
 plugins:
   - search
@@ -215,9 +232,13 @@ plugins:
   #- meta
   - redirects:
       redirect_maps:
-        "garden/daily-notes/posts/2024-06-08.md": garden/daily-notes/posts/2024-06-09.md
-        "garden/daily-notes/posts/2024-06-10.md": garden/daily-notes/posts/2024-06-12.md
-        "garden/daily-notes/posts/2024-06-11.md": garden/daily-notes/posts/2024-06-12.md
+        "garden/daily-notes/2024-06-08.md": garden/daily-notes/posts/2024-06-09.md
+        "garden/daily-notes/2024-06-10.md": garden/daily-notes/posts/2024-06-12.md
+        "garden/daily-notes/2024-06-11.md": garden/daily-notes/posts/2024-06-12.md
+        "garden/daily-notes/2025-01-10.md": garden/daily-notes/posts/2025-01-12.md
+        "garden/daily-notes/2025-01-11.md": garden/daily-notes/posts/2025-01-12.md
+        "multiverse/hermitcraft/hermitcraft-world-downloads-mirror.md": multiverse/hermitcraft/world-downloads-mirror.md
+        "cookbooks/linux/nixpkgs-setup-new-machine.md": "cookbooks/linux/nixpkgs/setup-new-machine.md"
 
 hooks:
 - overrides/hooks/magiclinks_rewriter.py
@@ -230,6 +251,11 @@ extra:
     - icon: simple/bluesky
       link: https://bsky.app/profile/did:plc:wcx4c3osbuzrwmxkqdfqygwv
       name: bsky
+    - icon: simple/ghost
+      link: https://blog.andreijiroh.dev
     - icon: simple/substack
       link: https://substack.com/@ajhalili2006
       name: substack
+    - icon: octicons/globe-24
+      link: https://andreijiroh.dev
+      name: website
