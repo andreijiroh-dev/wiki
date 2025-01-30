@@ -6,6 +6,13 @@
         "foam.foam-vscode",
         "vivaxy.vscode-conventional-commits",
         "eamodio.gitlens",
-        "bierner.emojisense"
+        "bierner.emojisense",
+        "ms-python.python",
+        "bierner.markdown-preview-github-styles",
+        "bierner.markdown-emoji",
+        "bierner.markdown-checkbox",
+        "bierner.markdown-yaml-preamble",
+        "bierner.markdown-footnotes",
+        "bierner.markdown-mermaid"
     ]
 }
