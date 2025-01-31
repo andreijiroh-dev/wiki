@@ -146,16 +146,34 @@ nav:
     - Andrei Jiroh in nutshell:
       - Context behind username (and more): garden/ajhalili2006.md
       - garden/digital-hoarding.md
+      - Personal user manual:
+        - Manual Homepage: garden/user-manual/index.md
+        - Personals:
+            - FAQs about me: faq.md
+            - Flaws and Quirks: garden/user-manual/flaws-and-quirks.md
+            - Neurodivergence and Disability: garden/user-manual/neurodivergence-and-disability.md
+        - Community:
+            - DNI List: garden/user-manual/dni.md
+            - Boundaries: garden/user-manual/boundaries.md
+            - Social Media Policy: garden/user-manual/socials.md
+            - On Roleplaying: garden/user-manual/roleplaying-hellscape.md
+        - Communications:
+            - General Communications Policy: garden/user-manual/communications.md
+            - Encrypted communications: garden/user-manual/encrypted-communications.md
     - Tools and Cookbooks:
       - garden/tools/index.md
       - Linux:
         - garden/linux/index.md
         - Dotfiles: garden/linux/dotfiles.md
         - NixOS configs and friends: garden/linux/nixops-config.md
-      - Homelabs and InfraOps: garden/infraops/index.md
+      - InfraOps:
+        - garden/infraops/index.md
+        - Homelab: garden/infraops/homelab.md
       - Service Accounts:
         - "GitHub and friends": garden/tools/github-bot.md
       - garden/tools/dotenv-tools.md
+      - Static Site Generators:
+        - garden/tools/mkdocs-material.md
       - Cookbooks:
         - cookbooks/index.md
         - Nixpkgs:
