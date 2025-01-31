@@ -8,6 +8,15 @@
   packages = with pkgs; [
     gitFull
     pipenv
+
+    # required for social cards
+    cairo
+    freetype
+    libffi
+    libjpeg
+    libpng
+    zlib
+    pngquant
   ];
 
   # https://devenv.sh/languages/
