@@ -1,4 +1,6 @@
 /go/:wikilink https://go.andreijiroh.dev/wiki/:wikilink
 /garden/username /garden/ajhalili2006
+/garden/autistic-vocabulary /kooky-insane-stuff/vocabulary
+/garden/autistic-vocabulary/* /kooky-insane-stuff/vocabulary/:splat
 /user-manual/* /garden/user-manual/:splat
 /user-manual /garden/user-manual
