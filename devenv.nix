@@ -46,6 +46,7 @@
   tasks = {
      "wiki:dev".exec = "pipenv run dev";
      "wiki:build".exec = "pipenv run build";
+     "wiki:deploy".exec = "pipenv run build && npm run deploy";
      "deps:update-deps".exec = "pipenv update && npx -y npm-check-updates -u && npm i";
   #   "devenv:enterShell".after = [ "myproj:setup" ];
   };

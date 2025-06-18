@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "PREVIEW_DRAFT=true pipenv run dev",
     "build": "CI=true pipenv run build",
-    "commit": "cz --signoff"
+    "commit": "cz --signoff",
+    "deploy": "wrangler deploy"
   },
   "config": {
     "commitizen": {

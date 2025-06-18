@@ -1,7 +1,6 @@
 # The Docker image that will be used to build your app
 image:
-  name: dock.mau.dev/andreijiroh-dev/docker-images/mkdocs-material:latest
-  entrypoint: ["/bin/bash", "-l", "-c"] # https://gitlab.com/gitlab-org/gitlab-runner/-/issues/2109#note_47480476
+  name: ghcr.io/cachix/devenv/devenv:latest
 
 stages:
   - test
@@ -10,12 +9,9 @@ stages:
 
 default:
   tags:
-    - amd64 # currently, we only the image in amd64 right now.
   # Functions that should be executed before the build script is run
   before_script:
-    - pipenv install --ignore-pipfile --deploy
-    - corepack enable && yarn install
-    - curl --silent "https://gitlab.com/gitlab-org/incubation-engineering/mobile-devops/download-secure-files/-/raw/main/installer" | bash
+    - devenv shell echo "run install deps setup"
 
 # Global builds and stuff
 variables:
@@ -28,11 +24,10 @@ variables:
 pages:
   environment:
     name: production
-    url: https://wiki.andreijiroh.xyz
+    url: https://wiki.andreijiroh.dev
   stage: build
   script:
-    - pipenv run build
-    - doppler run -- npx wrangler pages deploy --branch "${CI_DEFAULT_BRANCH}" --project-name ajhalili2006-garden public
+    - devenv tasks run wiki:deploy
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
