@@ -2,7 +2,7 @@
 
 {
   # https://devenv.sh/basics/
-  env.GREET = "devenv";
+  #env.GREET = "devenv";
 
   # https://devenv.sh/packages/
   packages = with pkgs; [
@@ -23,7 +23,7 @@
   # languages.rust.enable = true;
   languages.python = {
     enable = true;
-    package = pkgs.python313;
+    version = "3.13.3";
   };
 
   # https://devenv.sh/processes/
@@ -39,13 +39,16 @@
 
   enterShell = ''
     pipenv install
+    npm i
   '';
 
   # https://devenv.sh/tasks/
-  # tasks = {
-  #   "myproj:setup".exec = "mytool build";
+  tasks = {
+     "wiki:dev".exec = "pipenv run dev";
+     "wiki:build".exec = "pipenv run build";
+     "deps:update-deps".exec = "pipenv update && npx -y npm-check-updates -u && npm i";
   #   "devenv:enterShell".after = [ "myproj:setup" ];
-  # };
+  };
 
   # https://devenv.sh/tests/
   # enterTest = ''

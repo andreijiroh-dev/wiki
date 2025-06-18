@@ -1,9 +1,10 @@
 {
   "name": "@ajhalili2006/wiki",
   "devDependencies": {
-    "commitizen": "^4.3.0",
+    "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
-    "wrangler": "^3.61.0"
+    "npm-check-updates": "^18.0.1",
+    "wrangler": "^4.20.3"
   },
   "scripts": {
     "dev": "PREVIEW_DRAFT=true pipenv run dev",
