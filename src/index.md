@@ -31,7 +31,7 @@ If you are looking for his Autistic Life Notebook, it is on [Traumatized Autists
 
 ## More from Andrei Jiroh
 
-* [Personal user manual](https://andreijiroh.dev/user-manual)
+* [Personal user manual](./garden/user-manual/index.md)
 * [Recap Time Squad Wiki](https://wiki.recaptime.dev)
 
 [ttad]: https://github.com/traumatizedautists/notes

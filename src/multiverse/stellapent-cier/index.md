@@ -5,7 +5,7 @@ tags:
 - meta
 ---
 
-# Stellapent Cier mini wiki homepage
+# Stellapent Cier
 
 For more extenstive content, please visit the [[Stellapent Cier Wiki]], an [[lorebooks.wiki]] project, at <https://stellapent-cier.beta.lorebooks.eu.org>.[^1]
 

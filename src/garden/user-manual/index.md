@@ -3,13 +3,7 @@ description: Get to know Andrei Jiroh better by reading his personal user manual
 ---
 # Personal User Manual
 
-!!! info "This website is currently the official mirror of my personal README over at Coda"
-    <id="canonical-link">
-    In the future, I'll port things into this website to allow for community contributions without
-    messing around doc permissions. If you found any inconsistencies between versions, please do let me know in the Issue tracker so that I fix it.
-
-    [:octicons-link-external-16: Open in Coda](https://coda.io/@ajhalili2006/readme/personal-user-manual-8){ .md-button }
-    [:octicons-report-16: Report inconsistencies between versions](https://go.andreijiroh.eu.org/website-feedback/coda){ .md-button }
+!!! info "We've just migrated this from the website"
 
 Hello there, and welcome to my personal user manual. This is where I document about myself for others in terms
 of communications and teamwork. While the contents of this mini wiki will be always a work in progress, I’ll expand
@@ -17,7 +11,7 @@ them as I add missing information and update outdated details behind the scenes.
 
 ## About me
 
-[_Go back to the homepage for the introduction_](../index.md)
+_[Visit my homepage](https://andreijiroh.dev) or [](../ajhalili2006.md)_
 
 ## Contents
 
