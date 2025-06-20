@@ -1,0 +1,3 @@
+INHERIT: mkdocs.yml
+site_name: "~ajhalili2006's personal wiki + digital garden (on RTD Community)"
+site_url: !ENV READTHEDOCS_CANONICAL_URL
